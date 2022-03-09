@@ -20,6 +20,7 @@
 		D527832627D88FDD00C7A0F8 /* OCTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D527832527D88FDD00C7A0F8 /* OCTestAppTests.m */; };
 		D527833127D88FDD00C7A0F8 /* OCTestAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D527833027D88FDD00C7A0F8 /* OCTestAppUITests.m */; };
 		D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D527834427D893BB00C7A0F8 /* TGBaseTableView.m */; };
+		D527834827D89A7700C7A0F8 /* contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D527834727D89A7700C7A0F8 /* contents.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D527833227D88FDD00C7A0F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D527834327D893BB00C7A0F8 /* TGBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGBaseTableView.h; sourceTree = "<group>"; };
 		D527834427D893BB00C7A0F8 /* TGBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGBaseTableView.m; sourceTree = "<group>"; };
+		D527834727D89A7700C7A0F8 /* contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = contents.json; sourceTree = "<group>"; };
 		F8C71D35620A93DEE16355ED /* Pods-OCTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.release.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FCE2A2821832B5659FD4B622 /* Pods-OCTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 				D527831227D88FDD00C7A0F8 /* Main.storyboard */,
 				D527831527D88FDD00C7A0F8 /* Assets.xcassets */,
 				D527831727D88FDD00C7A0F8 /* LaunchScreen.storyboard */,
+				D527834727D89A7700C7A0F8 /* contents.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				D527831927D88FDD00C7A0F8 /* LaunchScreen.storyboard in Resources */,
 				D527831627D88FDD00C7A0F8 /* Assets.xcassets in Resources */,
 				D527831427D88FDD00C7A0F8 /* Main.storyboard in Resources */,
+				D527834827D89A7700C7A0F8 /* contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
