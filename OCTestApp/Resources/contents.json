@@ -4,9 +4,11 @@
         "items":[
             {
                 "section_name" : "",
-                "mainTitle" : "设计",
-                "subtitle" : "UI部分",
-                "icon" : "image_icon"
+                "detail" : [
+                {
+                    
+                }
+                ]
             },
         
         ]
