@@ -25,6 +25,8 @@
 		D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = D527834E27D8A56C00C7A0F8 /* TGJsonFileMgr.m */; };
 		D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835327D8AEE700C7A0F8 /* TGMainModel.m */; };
 		D527835927D8B19400C7A0F8 /* TGMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835827D8B19400C7A0F8 /* TGMainViewModel.m */; };
+		D527835D27D8C8E400C7A0F8 /* TGMainTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835C27D8C8E400C7A0F8 /* TGMainTitleCell.m */; };
+		D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835F27D8DCDC00C7A0F8 /* UIWindow+TGFlex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,10 @@
 		D527835327D8AEE700C7A0F8 /* TGMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMainModel.m; sourceTree = "<group>"; };
 		D527835727D8B19400C7A0F8 /* TGMainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMainViewModel.h; sourceTree = "<group>"; };
 		D527835827D8B19400C7A0F8 /* TGMainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMainViewModel.m; sourceTree = "<group>"; };
+		D527835B27D8C8E400C7A0F8 /* TGMainTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMainTitleCell.h; sourceTree = "<group>"; };
+		D527835C27D8C8E400C7A0F8 /* TGMainTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMainTitleCell.m; sourceTree = "<group>"; };
+		D527835E27D8DCDC00C7A0F8 /* UIWindow+TGFlex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+TGFlex.h"; sourceTree = "<group>"; };
+		D527835F27D8DCDC00C7A0F8 /* UIWindow+TGFlex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+TGFlex.m"; sourceTree = "<group>"; };
 		F8C71D35620A93DEE16355ED /* Pods-OCTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.release.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FCE2A2821832B5659FD4B622 /* Pods-OCTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +158,7 @@
 				D527833F27D8920D00C7A0F8 /* Classes */,
 				D527833E27D891FC00C7A0F8 /* Resources */,
 				D527831B27D88FDD00C7A0F8 /* main.m */,
+				D527831A27D88FDD00C7A0F8 /* Info.plist */,
 			);
 			path = OCTestApp;
 			sourceTree = "<group>";
@@ -177,7 +184,6 @@
 		D527833E27D891FC00C7A0F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D527831A27D88FDD00C7A0F8 /* Info.plist */,
 				D527831227D88FDD00C7A0F8 /* Main.storyboard */,
 				D527831527D88FDD00C7A0F8 /* Assets.xcassets */,
 				D527831727D88FDD00C7A0F8 /* LaunchScreen.storyboard */,
@@ -189,6 +195,7 @@
 		D527833F27D8920D00C7A0F8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D527835A27D8C8CF00C7A0F8 /* View */,
 				D527834127D8929700C7A0F8 /* ViewController */,
 				D527835627D8B0D700C7A0F8 /* Model */,
 				D527835527D8B0D000C7A0F8 /* viewModel */,
@@ -233,6 +240,8 @@
 			children = (
 				D527834327D893BB00C7A0F8 /* TGBaseTableView.h */,
 				D527834427D893BB00C7A0F8 /* TGBaseTableView.m */,
+				D527835E27D8DCDC00C7A0F8 /* UIWindow+TGFlex.h */,
+				D527835F27D8DCDC00C7A0F8 /* UIWindow+TGFlex.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,6 +281,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D527835A27D8C8CF00C7A0F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D527835B27D8C8E400C7A0F8 /* TGMainTitleCell.h */,
+				D527835C27D8C8E400C7A0F8 /* TGMainTitleCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FA203BC936F7E790CE9ADADC /* Pods */ = {
@@ -526,9 +544,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */,
+				D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */,
 				D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */,
 				D527831127D88FDD00C7A0F8 /* ViewController.m in Sources */,
 				D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */,
+				D527835D27D8C8E400C7A0F8 /* TGMainTitleCell.m in Sources */,
 				D527830B27D88FDD00C7A0F8 /* AppDelegate.m in Sources */,
 				D527834C27D8A1D700C7A0F8 /* TGNetworkManager.m in Sources */,
 				D527835927D8B19400C7A0F8 /* TGMainViewModel.m in Sources */,
@@ -639,7 +659,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -692,7 +712,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

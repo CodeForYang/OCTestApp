@@ -20,6 +20,7 @@
     dispatch_once(&onceToken, ^{
         mgr = [TGNetworkManager new];
         mgr.jsonMgr = [TGJsonFileMgr new];
+        mgr.jsonMgr.fileName = @"contents";
     });
     
     return mgr;

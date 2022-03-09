@@ -7,15 +7,20 @@
 
 #import "TGMainViewModel.h"
 #import "TGNetworkManager.h"
+#import <YYModel.h>
 @interface TGMainViewModel()
 
 @end
 @implementation TGMainViewModel
-- (void)getData {
-    TGNetworkManager.shared.requestWithSuccessBlock:^(id  _Nonnull obj) {
-        <#code#>
+- (void)getDataWithSucessBlock:(void (^)(TGMainModel * _Nonnull))block {
+    
+    self.isRequestDone = NO;
+    [TGNetworkManager.shared requestWithSuccessBlock:^(id  _Nonnull obj) {
+
+        self.model = [TGMainModel yy_modelWithJSON:obj[@"data"]];
+        block(self.model);
     } failureBlock:^(id  _Nonnull obj) {
-        <#code#>
-    }
+        TGLog(@"==#==%@", obj);
+    }];
 }
 @end

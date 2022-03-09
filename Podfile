@@ -6,7 +6,13 @@ target 'OCTestApp' do
 
   pod 'SDWebImage'
   pod 'YYModel'
+  pod 'ReactiveObjC'
+  pod 'FMDB'
+  pod 'FLEX', '4.3.0',:configurations => ['Debug']
+  pod 'SnapKit'
+  pod 'Masonry'
 
+  
 
 
 

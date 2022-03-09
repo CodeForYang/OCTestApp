@@ -6,11 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TGMainModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TGMainViewModel : NSObject
 
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) TGMainModel *model;
+@property (nonatomic, assign) BOOL isRequestDone;
+- (void)getDataWithSucessBlock:(void(^)(TGMainModel *model))block;
 @end
 
 NS_ASSUME_NONNULL_END

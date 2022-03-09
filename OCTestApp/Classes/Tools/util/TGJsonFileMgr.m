@@ -17,7 +17,8 @@
     }
     
     NSString *path = [[NSBundle mainBundle] pathForResource:self.fileName ofType:@"json"];
-    NSData *d = [NSData dataWithContentsOfURL:[NSURL URLWithString:path]];
+    
+    NSData *d = [NSData dataWithContentsOfFile:path];
     id obj = [NSJSONSerialization JSONObjectWithData:d options:NSJSONReadingMutableContainers error:nil];
     sleep(1);
     

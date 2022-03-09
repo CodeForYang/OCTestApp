@@ -7,6 +7,9 @@
 
 #ifndef tools_pch
 #define tools_pch
+#import <ReactiveObjC.h>
+#import <YYModel.h>
+#import <Masonry.h>
 
 #ifndef __OPTIMIZE__
 

@@ -1,22 +1,44 @@
 PODS:
+  - FLEX (4.3.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - Masonry (1.1.0)
+  - ReactiveObjC (3.1.1)
   - SDWebImage (5.12.3):
     - SDWebImage/Core (= 5.12.3)
   - SDWebImage/Core (5.12.3)
+  - SnapKit (5.0.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - FLEX (= 4.3.0)
+  - FMDB
+  - Masonry
+  - ReactiveObjC
   - SDWebImage
+  - SnapKit
   - YYModel
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - FLEX
+    - FMDB
+    - Masonry
+    - ReactiveObjC
     - SDWebImage
+    - SnapKit
     - YYModel
 
 SPEC CHECKSUMS:
+  FLEX: 58820af8881284bdd44e36141c607b8199cca45d
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 7cc7769e0a94c092c8772cc7c476f283c991fb91
+PODFILE CHECKSUM: eca3c0ea209bcc50e89691598c57140ef2f54841
 
 COCOAPODS: 1.11.2
