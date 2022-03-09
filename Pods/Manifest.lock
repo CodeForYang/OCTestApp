@@ -2,17 +2,21 @@ PODS:
   - SDWebImage (5.12.3):
     - SDWebImage/Core (= 5.12.3)
   - SDWebImage/Core (5.12.3)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - SDWebImage
+  - YYModel
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - SDWebImage
+    - YYModel
 
 SPEC CHECKSUMS:
   SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 25d343d9857b864255c7ff9a3de5cb55f467f946
+PODFILE CHECKSUM: 7cc7769e0a94c092c8772cc7c476f283c991fb91
 
 COCOAPODS: 1.11.2

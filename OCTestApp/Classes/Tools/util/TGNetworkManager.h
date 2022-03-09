@@ -9,8 +9,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^TGSuccessBlock)(id obj);
+typedef void(^TGFailureBlock)(id obj);
+
 @interface TGNetworkManager : NSObject
 + (instancetype)shared;
+- (void)requestWithSuccessBlock:(TGSuccessBlock)sBlock failureBlock:(TGFailureBlock)fBlock;
 @end
 
 NS_ASSUME_NONNULL_END

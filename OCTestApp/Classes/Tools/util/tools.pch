@@ -1,0 +1,31 @@
+//
+//  tools.pch
+//  OCTestApp
+//
+//  Created by 杨佩 on 2022/3/9.
+//
+
+#ifndef tools_pch
+#define tools_pch
+
+#ifndef __OPTIMIZE__
+
+    #define TGLogDetail(FORMAT, ...)  fprintf(stderr, "%s [%s-%d] %s\n", [[NSDate br_stringFromDate:[NSDate date] dateFormat:@"yyyy-MM-dd HH:mm:ss.SSSS"] UTF8String], [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __LINE__, [[[NSString alloc] initWithData:[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] dataUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding] UTF8String]?[[[NSString alloc] initWithData:[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] dataUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding] UTF8String]:[[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
+
+#else
+
+    #define TGLogDetail(FORMAT, ...) nil
+
+#endif
+
+#ifndef TGLog
+
+    #define TGLog(...)  NSLog(__VA_ARGS__)
+
+#else
+
+    #define TGLog(FORMAT, ...) nil
+
+#endif
+
+#endif /* tools_pch */

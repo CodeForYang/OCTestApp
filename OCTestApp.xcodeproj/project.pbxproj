@@ -22,6 +22,9 @@
 		D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D527834427D893BB00C7A0F8 /* TGBaseTableView.m */; };
 		D527834827D89A7700C7A0F8 /* contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D527834727D89A7700C7A0F8 /* contents.json */; };
 		D527834C27D8A1D700C7A0F8 /* TGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D527834B27D8A1D700C7A0F8 /* TGNetworkManager.m */; };
+		D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = D527834E27D8A56C00C7A0F8 /* TGJsonFileMgr.m */; };
+		D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835327D8AEE700C7A0F8 /* TGMainModel.m */; };
+		D527835927D8B19400C7A0F8 /* TGMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835827D8B19400C7A0F8 /* TGMainViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,13 @@
 		D527834727D89A7700C7A0F8 /* contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = contents.json; sourceTree = "<group>"; };
 		D527834A27D8A1D700C7A0F8 /* TGNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGNetworkManager.h; sourceTree = "<group>"; };
 		D527834B27D8A1D700C7A0F8 /* TGNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGNetworkManager.m; sourceTree = "<group>"; };
+		D527834D27D8A56C00C7A0F8 /* TGJsonFileMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGJsonFileMgr.h; sourceTree = "<group>"; };
+		D527834E27D8A56C00C7A0F8 /* TGJsonFileMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGJsonFileMgr.m; sourceTree = "<group>"; };
+		D527835027D8AA4A00C7A0F8 /* tools.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tools.pch; sourceTree = "<group>"; };
+		D527835227D8AEE700C7A0F8 /* TGMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMainModel.h; sourceTree = "<group>"; };
+		D527835327D8AEE700C7A0F8 /* TGMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMainModel.m; sourceTree = "<group>"; };
+		D527835727D8B19400C7A0F8 /* TGMainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMainViewModel.h; sourceTree = "<group>"; };
+		D527835827D8B19400C7A0F8 /* TGMainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMainViewModel.m; sourceTree = "<group>"; };
 		F8C71D35620A93DEE16355ED /* Pods-OCTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.release.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FCE2A2821832B5659FD4B622 /* Pods-OCTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,8 +189,10 @@
 		D527833F27D8920D00C7A0F8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D527834227D8938F00C7A0F8 /* Tools */,
 				D527834127D8929700C7A0F8 /* ViewController */,
+				D527835627D8B0D700C7A0F8 /* Model */,
+				D527835527D8B0D000C7A0F8 /* viewModel */,
+				D527834227D8938F00C7A0F8 /* Tools */,
 				D527834027D8928900C7A0F8 /* Delegate */,
 			);
 			path = Classes;
@@ -209,6 +221,7 @@
 		D527834227D8938F00C7A0F8 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D527835127D8AECE00C7A0F8 /* Model */,
 				D527834927D8A1B500C7A0F8 /* util */,
 				D527834627D893C600C7A0F8 /* View */,
 			);
@@ -229,8 +242,36 @@
 			children = (
 				D527834A27D8A1D700C7A0F8 /* TGNetworkManager.h */,
 				D527834B27D8A1D700C7A0F8 /* TGNetworkManager.m */,
+				D527834D27D8A56C00C7A0F8 /* TGJsonFileMgr.h */,
+				D527834E27D8A56C00C7A0F8 /* TGJsonFileMgr.m */,
+				D527835027D8AA4A00C7A0F8 /* tools.pch */,
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		D527835127D8AECE00C7A0F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D527835227D8AEE700C7A0F8 /* TGMainModel.h */,
+				D527835327D8AEE700C7A0F8 /* TGMainModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D527835527D8B0D000C7A0F8 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D527835727D8B19400C7A0F8 /* TGMainViewModel.h */,
+				D527835827D8B19400C7A0F8 /* TGMainViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		D527835627D8B0D700C7A0F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FA203BC936F7E790CE9ADADC /* Pods */ = {
@@ -484,10 +525,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */,
+				D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */,
 				D527831127D88FDD00C7A0F8 /* ViewController.m in Sources */,
 				D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */,
 				D527830B27D88FDD00C7A0F8 /* AppDelegate.m in Sources */,
 				D527834C27D8A1D700C7A0F8 /* TGNetworkManager.m in Sources */,
+				D527835927D8B19400C7A0F8 /* TGMainViewModel.m in Sources */,
 				D527831C27D88FDD00C7A0F8 /* main.m in Sources */,
 				D527830E27D88FDD00C7A0F8 /* SceneDelegate.m in Sources */,
 			);
@@ -664,7 +708,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJLKSR7LRL;
+				GCC_PREFIX_HEADER = OCTestApp/Classes/Tools/util/tools.pch;
 				INFOPLIST_FILE = OCTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -683,7 +729,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJLKSR7LRL;
+				GCC_PREFIX_HEADER = OCTestApp/Classes/Tools/util/tools.pch;
 				INFOPLIST_FILE = OCTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
