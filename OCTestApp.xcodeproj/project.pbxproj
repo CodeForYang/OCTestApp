@@ -21,6 +21,7 @@
 		D527833127D88FDD00C7A0F8 /* OCTestAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D527833027D88FDD00C7A0F8 /* OCTestAppUITests.m */; };
 		D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D527834427D893BB00C7A0F8 /* TGBaseTableView.m */; };
 		D527834827D89A7700C7A0F8 /* contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D527834727D89A7700C7A0F8 /* contents.json */; };
+		D527834C27D8A1D700C7A0F8 /* TGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D527834B27D8A1D700C7A0F8 /* TGNetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		D527834327D893BB00C7A0F8 /* TGBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGBaseTableView.h; sourceTree = "<group>"; };
 		D527834427D893BB00C7A0F8 /* TGBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGBaseTableView.m; sourceTree = "<group>"; };
 		D527834727D89A7700C7A0F8 /* contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = contents.json; sourceTree = "<group>"; };
+		D527834A27D8A1D700C7A0F8 /* TGNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGNetworkManager.h; sourceTree = "<group>"; };
+		D527834B27D8A1D700C7A0F8 /* TGNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGNetworkManager.m; sourceTree = "<group>"; };
 		F8C71D35620A93DEE16355ED /* Pods-OCTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.release.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FCE2A2821832B5659FD4B622 /* Pods-OCTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +209,7 @@
 		D527834227D8938F00C7A0F8 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D527834927D8A1B500C7A0F8 /* util */,
 				D527834627D893C600C7A0F8 /* View */,
 			);
 			path = Tools;
@@ -218,6 +222,15 @@
 				D527834427D893BB00C7A0F8 /* TGBaseTableView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D527834927D8A1B500C7A0F8 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				D527834A27D8A1D700C7A0F8 /* TGNetworkManager.h */,
+				D527834B27D8A1D700C7A0F8 /* TGNetworkManager.m */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		FA203BC936F7E790CE9ADADC /* Pods */ = {
@@ -474,6 +487,7 @@
 				D527831127D88FDD00C7A0F8 /* ViewController.m in Sources */,
 				D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */,
 				D527830B27D88FDD00C7A0F8 /* AppDelegate.m in Sources */,
+				D527834C27D8A1D700C7A0F8 /* TGNetworkManager.m in Sources */,
 				D527831C27D88FDD00C7A0F8 /* main.m in Sources */,
 				D527830E27D88FDD00C7A0F8 /* SceneDelegate.m in Sources */,
 			);
