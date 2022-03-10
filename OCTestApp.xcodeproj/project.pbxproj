@@ -11,9 +11,7 @@
 		74511553A65E352A9EA294CA /* Pods_OCTestApp_OCTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED71BAEE82330A14E7E499C /* Pods_OCTestApp_OCTestAppUITests.framework */; };
 		88E9866CE67DF073C942B584 /* Pods_OCTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C92645AA80808FB4EBFA31 /* Pods_OCTestApp.framework */; };
 		D527830B27D88FDD00C7A0F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D527830A27D88FDD00C7A0F8 /* AppDelegate.m */; };
-		D527830E27D88FDD00C7A0F8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D527830D27D88FDD00C7A0F8 /* SceneDelegate.m */; };
 		D527831127D88FDD00C7A0F8 /* TGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D527831027D88FDD00C7A0F8 /* TGBaseViewController.m */; };
-		D527831427D88FDD00C7A0F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D527831227D88FDD00C7A0F8 /* Main.storyboard */; };
 		D527831627D88FDD00C7A0F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D527831527D88FDD00C7A0F8 /* Assets.xcassets */; };
 		D527831927D88FDD00C7A0F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D527831727D88FDD00C7A0F8 /* LaunchScreen.storyboard */; };
 		D527831C27D88FDD00C7A0F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D527831B27D88FDD00C7A0F8 /* main.m */; };
@@ -27,6 +25,8 @@
 		D527835927D8B19400C7A0F8 /* TGMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835827D8B19400C7A0F8 /* TGMainViewModel.m */; };
 		D527835D27D8C8E400C7A0F8 /* TGMainTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835C27D8C8E400C7A0F8 /* TGMainTitleCell.m */; };
 		D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835F27D8DCDC00C7A0F8 /* UIWindow+TGFlex.m */; };
+		D57772BF27D9DE4A00ADDE85 /* ZoobieVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772BE27D9DE4A00ADDE85 /* ZoobieVc.m */; };
+		D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772C127D9DEEB00ADDE85 /* MyObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +57,8 @@
 		D527830627D88FDD00C7A0F8 /* OCTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D527830927D88FDD00C7A0F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D527830A27D88FDD00C7A0F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D527830C27D88FDD00C7A0F8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		D527830D27D88FDD00C7A0F8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		D527830F27D88FDD00C7A0F8 /* TGBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGBaseViewController.h; sourceTree = "<group>"; };
 		D527831027D88FDD00C7A0F8 /* TGBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGBaseViewController.m; sourceTree = "<group>"; };
-		D527831327D88FDD00C7A0F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D527831527D88FDD00C7A0F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D527831827D88FDD00C7A0F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D527831A27D88FDD00C7A0F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +85,11 @@
 		D527835C27D8C8E400C7A0F8 /* TGMainTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMainTitleCell.m; sourceTree = "<group>"; };
 		D527835E27D8DCDC00C7A0F8 /* UIWindow+TGFlex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+TGFlex.h"; sourceTree = "<group>"; };
 		D527835F27D8DCDC00C7A0F8 /* UIWindow+TGFlex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+TGFlex.m"; sourceTree = "<group>"; };
+		D57772BD27D9DE4A00ADDE85 /* ZoobieVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoobieVc.h; sourceTree = "<group>"; };
+		D57772BE27D9DE4A00ADDE85 /* ZoobieVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoobieVc.m; sourceTree = "<group>"; };
+		D57772C027D9DEEB00ADDE85 /* MyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
+		D57772C127D9DEEB00ADDE85 /* MyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
+		D57772C327D9E35C00ADDE85 /* MyObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyObject.cpp; sourceTree = "<group>"; };
 		F8C71D35620A93DEE16355ED /* Pods-OCTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.release.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FCE2A2821832B5659FD4B622 /* Pods-OCTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,7 +186,6 @@
 		D527833E27D891FC00C7A0F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D527831227D88FDD00C7A0F8 /* Main.storyboard */,
 				D527831527D88FDD00C7A0F8 /* Assets.xcassets */,
 				D527831727D88FDD00C7A0F8 /* LaunchScreen.storyboard */,
 				D527834727D89A7700C7A0F8 /* contents.json */,
@@ -195,10 +196,8 @@
 		D527833F27D8920D00C7A0F8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D527835A27D8C8CF00C7A0F8 /* View */,
-				D527834127D8929700C7A0F8 /* ViewController */,
-				D527835627D8B0D700C7A0F8 /* Model */,
-				D527835527D8B0D000C7A0F8 /* viewModel */,
+				D57772BC27D9DDFF00ADDE85 /* 僵尸对象 */,
+				D57772BB27D9DDF400ADDE85 /* Base */,
 				D527834227D8938F00C7A0F8 /* Tools */,
 				D527834027D8928900C7A0F8 /* Delegate */,
 			);
@@ -210,8 +209,6 @@
 			children = (
 				D527830927D88FDD00C7A0F8 /* AppDelegate.h */,
 				D527830A27D88FDD00C7A0F8 /* AppDelegate.m */,
-				D527830C27D88FDD00C7A0F8 /* SceneDelegate.h */,
-				D527830D27D88FDD00C7A0F8 /* SceneDelegate.m */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -290,6 +287,29 @@
 				D527835C27D8C8E400C7A0F8 /* TGMainTitleCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D57772BB27D9DDF400ADDE85 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D527835A27D8C8CF00C7A0F8 /* View */,
+				D527834127D8929700C7A0F8 /* ViewController */,
+				D527835627D8B0D700C7A0F8 /* Model */,
+				D527835527D8B0D000C7A0F8 /* viewModel */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D57772BC27D9DDFF00ADDE85 /* 僵尸对象 */ = {
+			isa = PBXGroup;
+			children = (
+				D57772C327D9E35C00ADDE85 /* MyObject.cpp */,
+				D57772BD27D9DE4A00ADDE85 /* ZoobieVc.h */,
+				D57772BE27D9DE4A00ADDE85 /* ZoobieVc.m */,
+				D57772C027D9DEEB00ADDE85 /* MyObject.h */,
+				D57772C127D9DEEB00ADDE85 /* MyObject.m */,
+			);
+			path = "僵尸对象";
 			sourceTree = "<group>";
 		};
 		FA203BC936F7E790CE9ADADC /* Pods */ = {
@@ -414,7 +434,6 @@
 			files = (
 				D527831927D88FDD00C7A0F8 /* LaunchScreen.storyboard in Resources */,
 				D527831627D88FDD00C7A0F8 /* Assets.xcassets in Resources */,
-				D527831427D88FDD00C7A0F8 /* Main.storyboard in Resources */,
 				D527834827D89A7700C7A0F8 /* contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,7 +564,9 @@
 			files = (
 				D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */,
 				D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */,
+				D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */,
 				D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */,
+				D57772BF27D9DE4A00ADDE85 /* ZoobieVc.m in Sources */,
 				D527831127D88FDD00C7A0F8 /* TGBaseViewController.m in Sources */,
 				D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */,
 				D527835D27D8C8E400C7A0F8 /* TGMainTitleCell.m in Sources */,
@@ -553,7 +574,6 @@
 				D527834C27D8A1D700C7A0F8 /* TGNetworkManager.m in Sources */,
 				D527835927D8B19400C7A0F8 /* TGMainViewModel.m in Sources */,
 				D527831C27D88FDD00C7A0F8 /* main.m in Sources */,
-				D527830E27D88FDD00C7A0F8 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,14 +609,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D527831227D88FDD00C7A0F8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D527831327D88FDD00C7A0F8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D527831727D88FDD00C7A0F8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
