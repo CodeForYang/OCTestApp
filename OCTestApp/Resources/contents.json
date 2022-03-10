@@ -3,10 +3,10 @@
     "data":{
         "items":[
             {
-                "section_name" : "111",
+                "section_name" : "底层原理探究",
                 "detail" : [
                     {
-                        "title" : "this is main Title",
+                        "title" : "僵尸对象探究",
                         "subTitle" : "this is subTitle",
                         "icon" : "img_icon"
                     }
@@ -26,6 +26,15 @@
                     {
                         "title" : "this is main Title2",
                         "subTitle" : "this is subTitle",
+                        "icon" : "img_icon"
+                    }
+                ]
+            },{
+                "section_name" : "444",
+                "detail" : [
+                    {
+                        "title" : "奥斯特洛夫斯基",
+                        "subTitle" : "洛夫斯基.弗拉基米尔",
                         "icon" : "img_icon"
                     }
                 ]

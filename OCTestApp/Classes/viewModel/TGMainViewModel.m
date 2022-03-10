@@ -15,10 +15,11 @@
 - (void)getDataWithSucessBlock:(void (^)(TGMainModel * _Nonnull))block {
     
     self.isRequestDone = NO;
-    [TGNetworkManager.shared requestWithSuccessBlock:^(id  _Nonnull obj) {
+    [[TGNetworkManager sharedWith:@"contents"] requestWithSuccessBlock:^(id  _Nonnull obj) {
 
         self.model = [TGMainModel yy_modelWithJSON:obj[@"data"]];
         block(self.model);
+        self.isRequestDone = YES;
     } failureBlock:^(id  _Nonnull obj) {
         TGLog(@"==#==%@", obj);
     }];

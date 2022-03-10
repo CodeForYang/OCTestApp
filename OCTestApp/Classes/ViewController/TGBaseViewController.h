@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TGBaseViewController : UIViewController
 
 
 @end

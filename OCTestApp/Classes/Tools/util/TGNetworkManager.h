@@ -13,7 +13,7 @@ typedef void(^TGSuccessBlock)(id obj);
 typedef void(^TGFailureBlock)(id obj);
 
 @interface TGNetworkManager : NSObject
-+ (instancetype)shared;
++ (instancetype)sharedWith:(NSString *)fileName;
 - (void)requestWithSuccessBlock:(TGSuccessBlock)sBlock failureBlock:(TGFailureBlock)fBlock;
 @end
 

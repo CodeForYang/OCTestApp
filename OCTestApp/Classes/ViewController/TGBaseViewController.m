@@ -5,24 +5,25 @@
 //  Created by 杨佩 on 2022/3/9.
 //
 
-#import "ViewController.h"
+#import "TGBaseViewController.h"
 #import "TGBaseTableView.h"
 #import "TGMainViewModel.h"
 #import <ReactiveObjC.h>
 #import "TGMainTitleCell.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface TGBaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) TGBaseTableView *tableView;
 @property (nonatomic, strong) TGMainViewModel *vm;
 
 @end
 
-@implementation ViewController
+@implementation TGBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"主界面";
     [self defaultConfig];
     
     
@@ -65,7 +66,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     TGMainSubModel *mode = self.vm.model.items[section];
     UIView *v = [UIView new];
-    v.backgroundColor = [UIColor colorWithWhite:0.6 alpha:0.8];
+    v.backgroundColor = [UIColor colorWithWhite:0.6 alpha:0.4];
     UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(16, 0, [UIScreen mainScreen].bounds.size.width, 44)];
     l.text = mode.section_name;
     [v addSubview:l];
@@ -78,10 +79,13 @@
     return 44;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//
-//    return 70;
-//}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80;
+}
 
 - (TGBaseTableView *)tableView {
     if (_tableView) return _tableView;
@@ -89,8 +93,7 @@
     _tableView = [[TGBaseTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    _tableView.rowHeight = UITableViewAutomaticDimension;
-    _tableView.estimatedRowHeight = 80;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:_tableView];
     return _tableView;
 }

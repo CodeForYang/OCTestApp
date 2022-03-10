@@ -39,6 +39,7 @@
         make.top.equalTo(self.contentView).offset(5);
         make.left.equalTo(self.contentView).offset(5);
         make.right.equalTo(self.contentView).offset(-5);
+        make.height.equalTo(@64);
     }];
     
 }
@@ -66,15 +67,16 @@
     
     _subTitleLabel = [UILabel new];
     _subTitleLabel.textColor = [UIColor blackColor];
-    _subTitleLabel.font = [UIFont systemFontOfSize:18];
+    _subTitleLabel.font = [UIFont systemFontOfSize:15];
     [self.contentView addSubview:_subTitleLabel];
     return _subTitleLabel;
 }
-- (UIView *)contentLayer {
+
+- (UIView *)contentBgView {
     if (_contentBgView) return _contentBgView;
    
     _contentBgView = [[UIView alloc] initWithFrame:self.contentView.bounds];
-    _contentBgView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8];
+    _contentBgView.backgroundColor = [[UIColor systemPinkColor] colorWithAlphaComponent:0.4];
     [self.contentView insertSubview:_contentBgView atIndex:0];
     _contentBgView.layer.cornerRadius = 8;
     _contentBgView.clipsToBounds = TRUE;

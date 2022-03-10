@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TGBaseViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,7 +16,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[TGBaseViewController new]];
+    
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

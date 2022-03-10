@@ -13,7 +13,7 @@
 @property (nonatomic, strong) TGJsonFileMgr *jsonMgr;
 @end
 @implementation TGNetworkManager
-+ (instancetype)shared {
++ (instancetype)sharedWith:(NSString *)fileName {
     
     static TGNetworkManager *mgr = nil;
     static dispatch_once_t onceToken;
@@ -22,6 +22,10 @@
         mgr.jsonMgr = [TGJsonFileMgr new];
         mgr.jsonMgr.fileName = @"contents";
     });
+    
+    if (mgr && mgr.jsonMgr) {
+        mgr.jsonMgr.fileName = fileName;
+    }
     
     return mgr;
 }
