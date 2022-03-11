@@ -22,13 +22,16 @@
 #endif
 
 #ifndef TGLog
-
     #define TGLog(...)  NSLog(__VA_ARGS__)
-
 #else
-
     #define TGLog(FORMAT, ...) nil
-
 #endif
+
+
+#define TGJumpVcKey @"TGJumpVcKey_"
+
+#define TGUserDefaultsGet(key) [[NSUserDefaults standardUserDefaults] valueForKey:key]
+#define TGUserDefaultsSet(value,key) [[NSUserDefaults standardUserDefaults] setValue:value forKey:key]; \
+[[NSUserDefaults standardUserDefaults] synchronize]
 
 #endif /* tools_pch */

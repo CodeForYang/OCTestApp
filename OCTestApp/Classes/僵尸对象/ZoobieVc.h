@@ -6,11 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TGViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface ZoobieVc : UIViewController
+@interface ZoobieVc : TGViewController
 
 @end
 

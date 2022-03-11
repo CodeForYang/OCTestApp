@@ -8,5 +8,7 @@
 #import "MyObject.h"
 
 @implementation MyObject
-
+- (void)dealloc {
+    
+}
 @end

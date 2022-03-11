@@ -11,6 +11,7 @@
 #import <ReactiveObjC.h>
 #import "TGMainTitleCell.h"
 #import "ZoobieVc.h"
+#import "TGViewController.h"
 
 @interface TGBaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -39,7 +40,16 @@
 //        [self.tableView reloadData];
     }];
 
+    NSString *clsName = TGUserDefaultsGet(TGJumpVcKey);
+    if (clsName && [NSClassFromString(clsName) isKindOfClass:TGViewController.class]) {
+       
+        TGViewController *vc = (TGViewController *)NSClassFromString(clsName);
+        [self.navigationController pushViewController:vc animated:NO];
+
+        
+    }
 }
+
 
 - (void)defaultConfig {
     [self.tableView registerClass:[TGMainTitleCell class] forCellReuseIdentifier:@"TGMainTitleCell"];

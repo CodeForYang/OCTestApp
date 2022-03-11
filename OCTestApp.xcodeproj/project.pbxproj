@@ -27,6 +27,11 @@
 		D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835F27D8DCDC00C7A0F8 /* UIWindow+TGFlex.m */; };
 		D57772BF27D9DE4A00ADDE85 /* ZoobieVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772BE27D9DE4A00ADDE85 /* ZoobieVc.m */; };
 		D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772C127D9DEEB00ADDE85 /* MyObject.m */; };
+		D57772F627D9F6B700ADDE85 /* _YHZombie_.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772F527D9F6B700ADDE85 /* _YHZombie_.m */; };
+		D57772F927D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772F827D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D57F9FFE27DB20B100B1680F /* TGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57F9FFD27DB20B100B1680F /* TGViewController.m */; };
+		D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */ = {isa = PBXBuildFile; fileRef = D57FA00027DB26B200B1680F /* YHMallocScrbble.m */; };
+		D57FA00427DB26D100B1680F /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = D57FA00227DB26D100B1680F /* fishhook.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +95,16 @@
 		D57772C027D9DEEB00ADDE85 /* MyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
 		D57772C127D9DEEB00ADDE85 /* MyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
 		D57772C327D9E35C00ADDE85 /* MyObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyObject.cpp; sourceTree = "<group>"; };
+		D57772F427D9F6B700ADDE85 /* _YHZombie_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _YHZombie_.h; sourceTree = "<group>"; };
+		D57772F527D9F6B700ADDE85 /* _YHZombie_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _YHZombie_.m; sourceTree = "<group>"; };
+		D57772F727D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YHZombiesNSObject.h"; sourceTree = "<group>"; };
+		D57772F827D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YHZombiesNSObject.m"; sourceTree = "<group>"; };
+		D57F9FFC27DB20B100B1680F /* TGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGViewController.h; sourceTree = "<group>"; };
+		D57F9FFD27DB20B100B1680F /* TGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGViewController.m; sourceTree = "<group>"; };
+		D57F9FFF27DB26B200B1680F /* YHMallocScrbble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHMallocScrbble.h; sourceTree = "<group>"; };
+		D57FA00027DB26B200B1680F /* YHMallocScrbble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHMallocScrbble.m; sourceTree = "<group>"; };
+		D57FA00227DB26D100B1680F /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		D57FA00327DB26D100B1680F /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		F8C71D35620A93DEE16355ED /* Pods-OCTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.release.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FCE2A2821832B5659FD4B622 /* Pods-OCTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,6 +233,8 @@
 			children = (
 				D527830F27D88FDD00C7A0F8 /* TGBaseViewController.h */,
 				D527831027D88FDD00C7A0F8 /* TGBaseViewController.m */,
+				D57F9FFC27DB20B100B1680F /* TGViewController.h */,
+				D57F9FFD27DB20B100B1680F /* TGViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -303,13 +320,37 @@
 		D57772BC27D9DDFF00ADDE85 /* 僵尸对象 */ = {
 			isa = PBXGroup;
 			children = (
+				D57FA00627DB280000B1680F /* tools */,
+				D57FA00527DB27EC00B1680F /* Model */,
 				D57772C327D9E35C00ADDE85 /* MyObject.cpp */,
 				D57772BD27D9DE4A00ADDE85 /* ZoobieVc.h */,
 				D57772BE27D9DE4A00ADDE85 /* ZoobieVc.m */,
-				D57772C027D9DEEB00ADDE85 /* MyObject.h */,
-				D57772C127D9DEEB00ADDE85 /* MyObject.m */,
 			);
 			path = "僵尸对象";
+			sourceTree = "<group>";
+		};
+		D57FA00527DB27EC00B1680F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D57772C027D9DEEB00ADDE85 /* MyObject.h */,
+				D57772C127D9DEEB00ADDE85 /* MyObject.m */,
+				D57772F427D9F6B700ADDE85 /* _YHZombie_.h */,
+				D57772F527D9F6B700ADDE85 /* _YHZombie_.m */,
+				D57772F727D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.h */,
+				D57772F827D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m */,
+				D57F9FFF27DB26B200B1680F /* YHMallocScrbble.h */,
+				D57FA00027DB26B200B1680F /* YHMallocScrbble.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D57FA00627DB280000B1680F /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				D57FA00227DB26D100B1680F /* fishhook.c */,
+				D57FA00327DB26D100B1680F /* fishhook.h */,
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 		FA203BC936F7E790CE9ADADC /* Pods */ = {
@@ -562,13 +603,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D57772F627D9F6B700ADDE85 /* _YHZombie_.m in Sources */,
 				D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */,
+				D57FA00427DB26D100B1680F /* fishhook.c in Sources */,
+				D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */,
 				D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */,
 				D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */,
 				D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */,
 				D57772BF27D9DE4A00ADDE85 /* ZoobieVc.m in Sources */,
+				D57F9FFE27DB20B100B1680F /* TGViewController.m in Sources */,
 				D527831127D88FDD00C7A0F8 /* TGBaseViewController.m in Sources */,
 				D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */,
+				D57772F927D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m in Sources */,
 				D527835D27D8C8E400C7A0F8 /* TGMainTitleCell.m in Sources */,
 				D527830B27D88FDD00C7A0F8 /* AppDelegate.m in Sources */,
 				D527834C27D8A1D700C7A0F8 /* TGNetworkManager.m in Sources */,
@@ -738,6 +784,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJLKSR7LRL;
 				GCC_PREFIX_HEADER = OCTestApp/Classes/Tools/util/tools.pch;
@@ -759,6 +806,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJLKSR7LRL;
 				GCC_PREFIX_HEADER = OCTestApp/Classes/Tools/util/tools.pch;
