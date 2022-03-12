@@ -12,11 +12,11 @@
                     }
                 ]
             },{
-                "section_name" : "222",
+                "section_name" : "UI控件",
                 "detail" : [
                     {
-                        "title" : "this is main Title1",
-                        "subTitle" : "this is subTitle",
+                        "title" : "标题滚动组件",
+                        "subTitle" : "可滚可滑动",
                         "icon" : "img_icon"
                     }
                 ]

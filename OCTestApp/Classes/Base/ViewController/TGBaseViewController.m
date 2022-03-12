@@ -41,12 +41,8 @@
     }];
 
     NSString *clsName = TGUserDefaultsGet(TGJumpVcKey);
-    if (clsName && [NSClassFromString(clsName) isKindOfClass:TGViewController.class]) {
-       
-        TGViewController *vc = (TGViewController *)NSClassFromString(clsName);
-        [self.navigationController pushViewController:vc animated:NO];
-
-        
+    if (clsName) {
+        [self.navigationController pushViewController:[NSClassFromString(clsName) new] animated:NO];
     }
 }
 

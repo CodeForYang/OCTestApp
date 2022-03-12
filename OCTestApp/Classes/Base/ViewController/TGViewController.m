@@ -16,7 +16,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIBarButtonItem *clearItem = [[UIBarButtonItem alloc]initWithTitle:@"清除" style:UIBarButtonItemStyleDone target:self action:@selector(rightClearItemClick)];
+    UIBarButtonItem *clearItem = [[UIBarButtonItem alloc]initWithTitle:@"清除" style:UIBarButtonItemStylePlain target:self action:@selector(rightClearItemClick)];
+    
     UIBarButtonItem *addItem = [[UIBarButtonItem alloc]initWithTitle:@"选择" style:UIBarButtonItemStyleDone target:self action:@selector(rightSelectClick)];
 
     self.navigationItem.rightBarButtonItems = @[clearItem, addItem];

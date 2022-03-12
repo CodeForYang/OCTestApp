@@ -31,7 +31,10 @@
 		D57772F927D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772F827D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D57F9FFE27DB20B100B1680F /* TGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57F9FFD27DB20B100B1680F /* TGViewController.m */; };
 		D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */ = {isa = PBXBuildFile; fileRef = D57FA00027DB26B200B1680F /* YHMallocScrbble.m */; };
-		D57FA00427DB26D100B1680F /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = D57FA00227DB26D100B1680F /* fishhook.c */; };
+		D58A215D27DC336000BD4CEC /* UIView+TGTopInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */; };
+		D58A216027DC48C600BD4CEC /* TGSlideVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A215F27DC48C600BD4CEC /* TGSlideVc.m */; };
+		D58A216327DC493F00BD4CEC /* TGSlideSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216227DC493F00BD4CEC /* TGSlideSwitch.m */; };
+		D58A216627DC498000BD4CEC /* TGSlideSwitchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216527DC498000BD4CEC /* TGSlideSwitchHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,8 +106,14 @@
 		D57F9FFD27DB20B100B1680F /* TGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGViewController.m; sourceTree = "<group>"; };
 		D57F9FFF27DB26B200B1680F /* YHMallocScrbble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHMallocScrbble.h; sourceTree = "<group>"; };
 		D57FA00027DB26B200B1680F /* YHMallocScrbble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHMallocScrbble.m; sourceTree = "<group>"; };
-		D57FA00227DB26D100B1680F /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
-		D57FA00327DB26D100B1680F /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		D58A215B27DC336000BD4CEC /* UIView+TGTopInsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TGTopInsets.h"; sourceTree = "<group>"; };
+		D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TGTopInsets.m"; sourceTree = "<group>"; };
+		D58A215E27DC48C600BD4CEC /* TGSlideVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideVc.h; sourceTree = "<group>"; };
+		D58A215F27DC48C600BD4CEC /* TGSlideVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSlideVc.m; sourceTree = "<group>"; };
+		D58A216127DC493F00BD4CEC /* TGSlideSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideSwitch.h; sourceTree = "<group>"; };
+		D58A216227DC493F00BD4CEC /* TGSlideSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSlideSwitch.m; sourceTree = "<group>"; };
+		D58A216427DC498000BD4CEC /* TGSlideSwitchHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideSwitchHeaderView.h; sourceTree = "<group>"; };
+		D58A216527DC498000BD4CEC /* TGSlideSwitchHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSlideSwitchHeaderView.m; sourceTree = "<group>"; };
 		F8C71D35620A93DEE16355ED /* Pods-OCTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.release.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FCE2A2821832B5659FD4B622 /* Pods-OCTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,7 +220,8 @@
 		D527833F27D8920D00C7A0F8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D57772BC27D9DDFF00ADDE85 /* 僵尸对象 */,
+				D57FA00F27DB322E00B1680F /* 底层原理 */,
+				D57FA00E27DB322400B1680F /* UI 控件 */,
 				D57772BB27D9DDF400ADDE85 /* Base */,
 				D527834227D8938F00C7A0F8 /* Tools */,
 				D527834027D8928900C7A0F8 /* Delegate */,
@@ -256,6 +266,12 @@
 				D527834427D893BB00C7A0F8 /* TGBaseTableView.m */,
 				D527835E27D8DCDC00C7A0F8 /* UIWindow+TGFlex.h */,
 				D527835F27D8DCDC00C7A0F8 /* UIWindow+TGFlex.m */,
+				D58A215B27DC336000BD4CEC /* UIView+TGTopInsets.h */,
+				D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */,
+				D58A216127DC493F00BD4CEC /* TGSlideSwitch.h */,
+				D58A216227DC493F00BD4CEC /* TGSlideSwitch.m */,
+				D58A216427DC498000BD4CEC /* TGSlideSwitchHeaderView.h */,
+				D58A216527DC498000BD4CEC /* TGSlideSwitchHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,10 +363,33 @@
 		D57FA00627DB280000B1680F /* tools */ = {
 			isa = PBXGroup;
 			children = (
-				D57FA00227DB26D100B1680F /* fishhook.c */,
-				D57FA00327DB26D100B1680F /* fishhook.h */,
 			);
 			path = tools;
+			sourceTree = "<group>";
+		};
+		D57FA00D27DB320500B1680F /* 滚动视图列表 */ = {
+			isa = PBXGroup;
+			children = (
+				D58A215E27DC48C600BD4CEC /* TGSlideVc.h */,
+				D58A215F27DC48C600BD4CEC /* TGSlideVc.m */,
+			);
+			path = "滚动视图列表";
+			sourceTree = "<group>";
+		};
+		D57FA00E27DB322400B1680F /* UI 控件 */ = {
+			isa = PBXGroup;
+			children = (
+				D57FA00D27DB320500B1680F /* 滚动视图列表 */,
+			);
+			path = "UI 控件";
+			sourceTree = "<group>";
+		};
+		D57FA00F27DB322E00B1680F /* 底层原理 */ = {
+			isa = PBXGroup;
+			children = (
+				D57772BC27D9DDFF00ADDE85 /* 僵尸对象 */,
+			);
+			path = "底层原理";
 			sourceTree = "<group>";
 		};
 		FA203BC936F7E790CE9ADADC /* Pods */ = {
@@ -605,7 +644,7 @@
 			files = (
 				D57772F627D9F6B700ADDE85 /* _YHZombie_.m in Sources */,
 				D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */,
-				D57FA00427DB26D100B1680F /* fishhook.c in Sources */,
+				D58A216627DC498000BD4CEC /* TGSlideSwitchHeaderView.m in Sources */,
 				D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */,
 				D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */,
 				D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */,
@@ -613,7 +652,10 @@
 				D57772BF27D9DE4A00ADDE85 /* ZoobieVc.m in Sources */,
 				D57F9FFE27DB20B100B1680F /* TGViewController.m in Sources */,
 				D527831127D88FDD00C7A0F8 /* TGBaseViewController.m in Sources */,
+				D58A216027DC48C600BD4CEC /* TGSlideVc.m in Sources */,
+				D58A215D27DC336000BD4CEC /* UIView+TGTopInsets.m in Sources */,
 				D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */,
+				D58A216327DC493F00BD4CEC /* TGSlideSwitch.m in Sources */,
 				D57772F927D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m in Sources */,
 				D527835D27D8C8E400C7A0F8 /* TGMainTitleCell.m in Sources */,
 				D527830B27D88FDD00C7A0F8 /* AppDelegate.m in Sources */,
