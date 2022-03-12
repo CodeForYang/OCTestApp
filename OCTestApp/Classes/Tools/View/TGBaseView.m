@@ -1,13 +1,13 @@
 //
-//  TGSlideSwitch.m
+//  TGBaseView.m
 //  OCTestApp
 //
 //  Created by 杨佩 on 2022/3/12.
 //
 
-#import "TGSlideSwitch.h"
+#import "TGBaseView.h"
 
-@implementation TGSlideSwitch
+@implementation TGBaseView
 
 /*
 // Only override drawRect: if you perform custom drawing.

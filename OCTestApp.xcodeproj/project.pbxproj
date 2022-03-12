@@ -33,8 +33,10 @@
 		D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */ = {isa = PBXBuildFile; fileRef = D57FA00027DB26B200B1680F /* YHMallocScrbble.m */; };
 		D58A215D27DC336000BD4CEC /* UIView+TGTopInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */; };
 		D58A216027DC48C600BD4CEC /* TGSlideVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A215F27DC48C600BD4CEC /* TGSlideVc.m */; };
-		D58A216327DC493F00BD4CEC /* TGSlideSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216227DC493F00BD4CEC /* TGSlideSwitch.m */; };
 		D58A216627DC498000BD4CEC /* TGSlideSwitchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216527DC498000BD4CEC /* TGSlideSwitchHeaderView.m */; };
+		D58A216927DC813100BD4CEC /* TGSlideSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216827DC813100BD4CEC /* TGSlideSwitchView.m */; };
+		D58A216C27DC85CA00BD4CEC /* TGBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216B27DC85CA00BD4CEC /* TGBaseView.m */; };
+		D58A216F27DC8B1F00BD4CEC /* TGSlideSegementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216E27DC8B1F00BD4CEC /* TGSlideSegementCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,10 +112,14 @@
 		D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TGTopInsets.m"; sourceTree = "<group>"; };
 		D58A215E27DC48C600BD4CEC /* TGSlideVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideVc.h; sourceTree = "<group>"; };
 		D58A215F27DC48C600BD4CEC /* TGSlideVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSlideVc.m; sourceTree = "<group>"; };
-		D58A216127DC493F00BD4CEC /* TGSlideSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideSwitch.h; sourceTree = "<group>"; };
-		D58A216227DC493F00BD4CEC /* TGSlideSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSlideSwitch.m; sourceTree = "<group>"; };
 		D58A216427DC498000BD4CEC /* TGSlideSwitchHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideSwitchHeaderView.h; sourceTree = "<group>"; };
 		D58A216527DC498000BD4CEC /* TGSlideSwitchHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSlideSwitchHeaderView.m; sourceTree = "<group>"; };
+		D58A216727DC813100BD4CEC /* TGSlideSwitchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideSwitchView.h; sourceTree = "<group>"; };
+		D58A216827DC813100BD4CEC /* TGSlideSwitchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSlideSwitchView.m; sourceTree = "<group>"; };
+		D58A216A27DC85CA00BD4CEC /* TGBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGBaseView.h; sourceTree = "<group>"; };
+		D58A216B27DC85CA00BD4CEC /* TGBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGBaseView.m; sourceTree = "<group>"; };
+		D58A216D27DC8B1F00BD4CEC /* TGSlideSegementCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideSegementCell.h; sourceTree = "<group>"; };
+		D58A216E27DC8B1F00BD4CEC /* TGSlideSegementCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSlideSegementCell.m; sourceTree = "<group>"; };
 		F8C71D35620A93DEE16355ED /* Pods-OCTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.release.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FCE2A2821832B5659FD4B622 /* Pods-OCTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,10 +274,14 @@
 				D527835F27D8DCDC00C7A0F8 /* UIWindow+TGFlex.m */,
 				D58A215B27DC336000BD4CEC /* UIView+TGTopInsets.h */,
 				D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */,
-				D58A216127DC493F00BD4CEC /* TGSlideSwitch.h */,
-				D58A216227DC493F00BD4CEC /* TGSlideSwitch.m */,
+				D58A216727DC813100BD4CEC /* TGSlideSwitchView.h */,
+				D58A216827DC813100BD4CEC /* TGSlideSwitchView.m */,
 				D58A216427DC498000BD4CEC /* TGSlideSwitchHeaderView.h */,
 				D58A216527DC498000BD4CEC /* TGSlideSwitchHeaderView.m */,
+				D58A216A27DC85CA00BD4CEC /* TGBaseView.h */,
+				D58A216B27DC85CA00BD4CEC /* TGBaseView.m */,
+				D58A216D27DC8B1F00BD4CEC /* TGSlideSegementCell.h */,
+				D58A216E27DC8B1F00BD4CEC /* TGSlideSegementCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -644,21 +654,23 @@
 			files = (
 				D57772F627D9F6B700ADDE85 /* _YHZombie_.m in Sources */,
 				D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */,
+				D58A216F27DC8B1F00BD4CEC /* TGSlideSegementCell.m in Sources */,
 				D58A216627DC498000BD4CEC /* TGSlideSwitchHeaderView.m in Sources */,
 				D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */,
 				D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */,
 				D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */,
 				D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */,
+				D58A216927DC813100BD4CEC /* TGSlideSwitchView.m in Sources */,
 				D57772BF27D9DE4A00ADDE85 /* ZoobieVc.m in Sources */,
 				D57F9FFE27DB20B100B1680F /* TGViewController.m in Sources */,
 				D527831127D88FDD00C7A0F8 /* TGBaseViewController.m in Sources */,
 				D58A216027DC48C600BD4CEC /* TGSlideVc.m in Sources */,
 				D58A215D27DC336000BD4CEC /* UIView+TGTopInsets.m in Sources */,
 				D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */,
-				D58A216327DC493F00BD4CEC /* TGSlideSwitch.m in Sources */,
 				D57772F927D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m in Sources */,
 				D527835D27D8C8E400C7A0F8 /* TGMainTitleCell.m in Sources */,
 				D527830B27D88FDD00C7A0F8 /* AppDelegate.m in Sources */,
+				D58A216C27DC85CA00BD4CEC /* TGBaseView.m in Sources */,
 				D527834C27D8A1D700C7A0F8 /* TGNetworkManager.m in Sources */,
 				D527835927D8B19400C7A0F8 /* TGMainViewModel.m in Sources */,
 				D527831C27D88FDD00C7A0F8 /* main.m in Sources */,
