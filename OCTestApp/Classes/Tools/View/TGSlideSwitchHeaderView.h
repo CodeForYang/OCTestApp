@@ -28,13 +28,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIColor *ItemNormalColor;
 
-@property (nonatomic, assign) CGFloat *progress;
+@property (nonatomic, assign) CGFloat progress;
 
-@property (nonatomic, assign) NSUInteger *selectedIndex;
+@property (nonatomic, assign) NSInteger selectedIndex;
 
 @property (nonatomic, assign) UIButton *addButton;
 
+@property (nonatomic, assign) CGFloat customMargin;
 
+@property (nonatomic, assign) BOOL ignoreAnimation;
+
+@property (nonatomic, assign) BOOL hideBottonLine;
+
+@property (nonatomic, assign) BOOL hideShadow;
+
+@property (nonatomic, assign) BOOL showTitlesInNavBar;
+
+@property (nonatomic, assign) BOOL showHeaderViewInNavigationBar;
 
 @end
 

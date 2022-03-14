@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TGSlideSwitchView : TGBaseView
 
-@property (nonatomic, strong) NSArray *viewController;
+@property (nonatomic, strong) NSArray *viewControllers;
 
 @property (nonatomic, strong) NSArray *titles;
 
@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)showInViewController:(UIViewController *)viewController;
 
-- (void)showInNavigationController:(UIViewController *)navigationController;
+- (void)showInNavigationController:(UINavigationController *)navigationController;
 
 
 @end
