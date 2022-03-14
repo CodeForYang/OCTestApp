@@ -10,7 +10,7 @@
 static const CGFloat segmentH = 40.0f;
 
 @interface TGSlideSwitchView()<
-UIPageViewControllerDelegate,UIPageViewControllerDataSource, TGSlideSwitchDelegate, UIScrollViewDelegate, TGSlideSwitchHeaderViewDelegate>
+UIPageViewControllerDelegate,UIPageViewControllerDataSource, UIScrollViewDelegate, TGSlideSwitchHeaderViewDelegate>
 
 @property (nonatomic, assign) BOOL showHeaderViewInNavigationBar;
 
@@ -48,6 +48,20 @@ UIPageViewControllerDelegate,UIPageViewControllerDataSource, TGSlideSwitchDelega
     }
     
 }
+
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed {
+    _selectedIdx = [_viewControllers indexOfObject:pageViewController.viewControllers.firstObject];
+    _headerView.selectedIndex = _selectedIdx;
+    [self performSwitchDelegateMethod];
+}
+
+- (void)performSwitchDelegateMethod {
+    if ([self.delegate respondsToSelector:@selector(slideSwitchDidSelectIndex:)]) {
+        [_delegate slideSwitchDidSelectIndex:_selectedIdx];
+    }
+}
+
+
 - (void)showInViewController:(UIViewController *)viewController {
     [viewController addChildViewController:_pageVc];
     [viewController.view addSubview:self];
@@ -66,7 +80,7 @@ UIPageViewControllerDelegate,UIPageViewControllerDataSource, TGSlideSwitchDelega
     
     UIViewController *vc = nil;
     if (_selectedIdx < _titles.count - 1) {
-        vc = _viewControllers[_selectedIdx];
+        vc = _viewControllers[_selectedIdx + 1];
         vc.view.bounds = pageViewController.view.bounds;
     }
     
@@ -74,15 +88,59 @@ UIPageViewControllerDelegate,UIPageViewControllerDataSource, TGSlideSwitchDelega
 }
 
 - (nullable UIViewController *)pageViewController:(nonnull UIPageViewController *)pageViewController viewControllerBeforeViewController:(nonnull UIViewController *)viewController {
-    <#code#>
+    
+    UIViewController *vc = nil;
+    if (_selectedIdx > 0) {
+        vc = _viewControllers[_selectedIdx - 1];
+        vc.view.bounds = pageViewController.view.bounds;
+    }
+    
+    return vc;
 }
 
-- (void)slideSwitchDidSelectIndex:(NSInteger)index {
-    <#code#>
-}
 
 - (void)slideSegmentDidSelectIndex:(NSInteger)index {
-    <#code#>
+    if (index == _selectedIdx) return;
+    
+    [self switchToIndex:index];
+    
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView.contentOffset.x == scrollView.bounds.size.width) return;
+    CGFloat p = scrollView.contentOffset.x / scrollView.bounds.size.width;
+    _headerView.progress = p;
+}
+
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    _headerView.ignoreAnimation = NO;
+}
+
+//pageView方向
+- (UIInterfaceOrientation)pageViewControllerPreferredInterfaceOrientationForPresentation:(UIPageViewController *)pageViewController {
+    return UIInterfaceOrientationPortrait;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    _headerView.frame = CGRectMake(0, 0, self.frame.size.width, segmentH);
+    _pageVc.view.frame = CGRectMake(0, segmentH, self.frame.size.width, self.frame.size.height - segmentH);
+}
+
+- (void)willMoveToSuperview:(UIView *)newSuperview {
+    [super willMoveToSuperview:newSuperview];
+    [self switchToIndex: _selectedIdx];
+}
+
+- (void)switchToIndex:(NSInteger)idx {
+    __weak typeof(self)weakSelf = self;
+    
+    [_pageVc setViewControllers:@[_viewControllers[idx]] direction:idx < _selectedIdx animated:YES completion:^(BOOL finished) {
+        weakSelf.selectedIdx = idx;
+        [weakSelf performSwitchDelegateMethod];
+    }];
 }
 
 

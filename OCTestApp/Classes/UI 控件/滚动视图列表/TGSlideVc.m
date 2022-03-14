@@ -6,26 +6,32 @@
 //
 
 #import "TGSlideVc.h"
+#import "TGSlideSwitchView.h"
 
 @interface TGSlideVc ()
 
+@property (nonatomic, strong) TGSlideSwitchView *slideSwitch;
 @end
 
 @implementation TGSlideVc
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setup1];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setup1 {
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(showNextView)];
+    NSArray *titles = @[@"今天",@"是个",@"好日子",@"心想的",@"事儿",@"都能成",@"明天",@"是个",@"好日子",@"打开了家门",@"咱迎春风",@"~~~"];
+    NSMutableArray *vcs = [[NSMutableArray alloc] init];
+    for (NSInteger i = 0; i < titles.count; i++) {
+        <#statements#>
+    }
 }
-*/
 
+- (void)showNextView {
+    _slideSwitch.headerView.selectedIndex += 1;
+}
 @end
