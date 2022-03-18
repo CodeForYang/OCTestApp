@@ -11,9 +11,7 @@ target 'OCTestApp' do
   pod 'FLEX', '4.3.0',:configurations => ['Debug']
   pod 'SnapKit'
   pod 'Masonry'
-
-  
-
+  pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 
 
 

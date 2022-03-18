@@ -13,6 +13,9 @@
 #import "ZoobieVc.h"
 #import "TGViewController.h"
 #import "TGLockVc.h"
+#import "TGSlideVc.h"
+#import "TGAutoLayoutController.h"
+#import "TGCharSetVc.h"
 
 @interface TGBaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -29,7 +32,6 @@
     self.title = @"主界面";
     [self defaultConfig];
     
-    self.view.backgroundColor = [UIColor whiteColor];
     
     [RACObserve(self, vm.isRequestDone) subscribeNext:^(id  _Nullable x) {
         if (self.vm.isRequestDone == NO) {return;}
@@ -37,8 +39,7 @@
     }];
     
     [self.vm getDataWithSucessBlock:^(TGMainModel * _Nonnull model) {
-        TGLog(@"request - success");
-//        [self.tableView reloadData];
+
     }];
 
     NSString *clsName = TGUserDefaultsGet(TGJumpVcKey);
@@ -110,6 +111,16 @@
         } else if (indexPath.row == 1) {
             [self.navigationController pushViewController:[TGLockVc new] animated:YES];
         }
+    } else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            [self.navigationController pushViewController:[TGSlideVc new] animated:YES];
+        } else if (indexPath.row == 1) {
+            [self.navigationController pushViewController:[TGAutoLayoutController new] animated:YES];
+        } else if (indexPath.row == 2) {
+            [self.navigationController pushViewController:[TGCharSetVc new] animated:YES];
+        }
+        
+        
     }
 }
 

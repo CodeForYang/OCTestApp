@@ -32,6 +32,12 @@
 		D57F9FFE27DB20B100B1680F /* TGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57F9FFD27DB20B100B1680F /* TGViewController.m */; };
 		D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */ = {isa = PBXBuildFile; fileRef = D57FA00027DB26B200B1680F /* YHMallocScrbble.m */; };
 		D58303CA27E4260000D6B701 /* TGLockVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303C927E4260000D6B701 /* TGLockVc.m */; };
+		D58303D427E4639F00D6B701 /* STMAssembleMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303CC27E4639E00D6B701 /* STMAssembleMaker.m */; };
+		D58303D527E4639F00D6B701 /* STMPartMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303CE27E4639E00D6B701 /* STMPartMaker.m */; };
+		D58303D627E4639F00D6B701 /* STMAssembleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303D227E4639E00D6B701 /* STMAssembleView.m */; };
+		D58303D727E4639F00D6B701 /* STMPartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303D327E4639E00D6B701 /* STMPartView.m */; };
+		D58303DA27E463CF00D6B701 /* TGAutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303D927E463CF00D6B701 /* TGAutoLayoutController.m */; };
+		D58303DF27E46DDF00D6B701 /* TGCharSetVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303DE27E46DDF00D6B701 /* TGCharSetVc.m */; };
 		D589A40927DF213A005E4DB1 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D589A40527DF213A005E4DB1 /* CollectionViewController.m */; };
 		D589A40A27DF213A005E4DB1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D589A40827DF213A005E4DB1 /* TableViewController.m */; };
 		D58A215D27DC336000BD4CEC /* UIView+TGTopInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */; };
@@ -113,6 +119,18 @@
 		D57FA00027DB26B200B1680F /* YHMallocScrbble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHMallocScrbble.m; sourceTree = "<group>"; };
 		D58303C827E4260000D6B701 /* TGLockVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLockVc.h; sourceTree = "<group>"; };
 		D58303C927E4260000D6B701 /* TGLockVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLockVc.m; sourceTree = "<group>"; };
+		D58303CC27E4639E00D6B701 /* STMAssembleMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMAssembleMaker.m; sourceTree = "<group>"; };
+		D58303CD27E4639E00D6B701 /* STMPartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMPartView.h; sourceTree = "<group>"; };
+		D58303CE27E4639E00D6B701 /* STMPartMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMPartMaker.m; sourceTree = "<group>"; };
+		D58303CF27E4639E00D6B701 /* STMAssembleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMAssembleView.h; sourceTree = "<group>"; };
+		D58303D027E4639E00D6B701 /* STMPartMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMPartMaker.h; sourceTree = "<group>"; };
+		D58303D127E4639E00D6B701 /* STMAssembleMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMAssembleMaker.h; sourceTree = "<group>"; };
+		D58303D227E4639E00D6B701 /* STMAssembleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMAssembleView.m; sourceTree = "<group>"; };
+		D58303D327E4639E00D6B701 /* STMPartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMPartView.m; sourceTree = "<group>"; };
+		D58303D827E463CF00D6B701 /* TGAutoLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGAutoLayoutController.h; sourceTree = "<group>"; };
+		D58303D927E463CF00D6B701 /* TGAutoLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGAutoLayoutController.m; sourceTree = "<group>"; };
+		D58303DD27E46DDF00D6B701 /* TGCharSetVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGCharSetVc.h; sourceTree = "<group>"; };
+		D58303DE27E46DDF00D6B701 /* TGCharSetVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGCharSetVc.m; sourceTree = "<group>"; };
 		D589A40527DF213A005E4DB1 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		D589A40627DF213A005E4DB1 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		D589A40727DF213A005E4DB1 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
@@ -402,6 +420,8 @@
 		D57FA00E27DB322400B1680F /* UI 控件 */ = {
 			isa = PBXGroup;
 			children = (
+				D58303DB27E46D9E00D6B701 /* NSCharacterSet */,
+				D58303CB27E4638400D6B701 /* DLS */,
 				D57FA00D27DB320500B1680F /* 滚动视图列表 */,
 			);
 			path = "UI 控件";
@@ -423,6 +443,32 @@
 				D58303C927E4260000D6B701 /* TGLockVc.m */,
 			);
 			path = "自旋&互斥锁";
+			sourceTree = "<group>";
+		};
+		D58303CB27E4638400D6B701 /* DLS */ = {
+			isa = PBXGroup;
+			children = (
+				D58303D127E4639E00D6B701 /* STMAssembleMaker.h */,
+				D58303CC27E4639E00D6B701 /* STMAssembleMaker.m */,
+				D58303CF27E4639E00D6B701 /* STMAssembleView.h */,
+				D58303D227E4639E00D6B701 /* STMAssembleView.m */,
+				D58303D027E4639E00D6B701 /* STMPartMaker.h */,
+				D58303CE27E4639E00D6B701 /* STMPartMaker.m */,
+				D58303CD27E4639E00D6B701 /* STMPartView.h */,
+				D58303D327E4639E00D6B701 /* STMPartView.m */,
+				D58303D827E463CF00D6B701 /* TGAutoLayoutController.h */,
+				D58303D927E463CF00D6B701 /* TGAutoLayoutController.m */,
+			);
+			path = DLS;
+			sourceTree = "<group>";
+		};
+		D58303DB27E46D9E00D6B701 /* NSCharacterSet */ = {
+			isa = PBXGroup;
+			children = (
+				D58303DD27E46DDF00D6B701 /* TGCharSetVc.h */,
+				D58303DE27E46DDF00D6B701 /* TGCharSetVc.m */,
+			);
+			path = NSCharacterSet;
 			sourceTree = "<group>";
 		};
 		FA203BC936F7E790CE9ADADC /* Pods */ = {
@@ -680,19 +726,25 @@
 				D58A216F27DC8B1F00BD4CEC /* TGSlideSegementCell.m in Sources */,
 				D589A40927DF213A005E4DB1 /* CollectionViewController.m in Sources */,
 				D58A216627DC498000BD4CEC /* TGSlideSwitchHeaderView.m in Sources */,
+				D58303D727E4639F00D6B701 /* STMPartView.m in Sources */,
 				D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */,
 				D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */,
 				D589A40A27DF213A005E4DB1 /* TableViewController.m in Sources */,
+				D58303DA27E463CF00D6B701 /* TGAutoLayoutController.m in Sources */,
 				D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */,
 				D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */,
 				D58303CA27E4260000D6B701 /* TGLockVc.m in Sources */,
+				D58303D627E4639F00D6B701 /* STMAssembleView.m in Sources */,
 				D58A216927DC813100BD4CEC /* TGSlideSwitchView.m in Sources */,
 				D57772BF27D9DE4A00ADDE85 /* ZoobieVc.m in Sources */,
 				D57F9FFE27DB20B100B1680F /* TGViewController.m in Sources */,
 				D527831127D88FDD00C7A0F8 /* TGBaseViewController.m in Sources */,
 				D58A216027DC48C600BD4CEC /* TGSlideVc.m in Sources */,
 				D58A215D27DC336000BD4CEC /* UIView+TGTopInsets.m in Sources */,
+				D58303D427E4639F00D6B701 /* STMAssembleMaker.m in Sources */,
+				D58303D527E4639F00D6B701 /* STMPartMaker.m in Sources */,
 				D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */,
+				D58303DF27E46DDF00D6B701 /* TGCharSetVc.m in Sources */,
 				D57772F927D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m in Sources */,
 				D527835D27D8C8E400C7A0F8 /* TGMainTitleCell.m in Sources */,
 				D527830B27D88FDD00C7A0F8 /* AppDelegate.m in Sources */,
