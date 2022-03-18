@@ -12,6 +12,7 @@
 #import "TGMainTitleCell.h"
 #import "ZoobieVc.h"
 #import "TGViewController.h"
+#import "TGLockVc.h"
 
 @interface TGBaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -44,8 +45,24 @@
     if (clsName) {
         [self.navigationController pushViewController:[NSClassFromString(clsName) new] animated:NO];
     }
+    
+    
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+//    UISwitch *s = [UISwitch new];
+//    [self.tableView addSubview:s];
+//    s.onTintColor = [UIColor redColor];
+//    s.tintColor = [UIColor greenColor];//边缘
+//    s.backgroundColor = [UIColor greenColor];
+//    s.layer.cornerRadius = s.frame.size.height/2.0;
+//    s.layer.masksToBounds = true;
+    
+
+}
 
 - (void)defaultConfig {
     [self.tableView registerClass:[TGMainTitleCell class] forCellReuseIdentifier:@"TGMainTitleCell"];
@@ -87,19 +104,21 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0 && indexPath.row == 0) {
-        [self.navigationController pushViewController:[ZoobieVc new] animated:YES];
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            [self.navigationController pushViewController:[ZoobieVc new] animated:YES];
+        } else if (indexPath.row == 1) {
+            [self.navigationController pushViewController:[TGLockVc new] animated:YES];
+        }
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 80;
-}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {return  70;}
 
 - (TGBaseTableView *)tableView {
     if (_tableView) return _tableView;
     
-    _tableView = [[TGBaseTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    _tableView = [[TGBaseTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

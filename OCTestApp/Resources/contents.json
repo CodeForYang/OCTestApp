@@ -9,7 +9,12 @@
                         "title" : "僵尸对象探究",
                         "subTitle" : "this is subTitle",
                         "icon" : "img_icon"
+                    },{
+                        "title" : "自旋锁&互斥锁",
+                        "subTitle" : "automatic vs synchronized",
+                        "icon" : "img_icon"
                     }
+                    
                 ]
             },{
                 "section_name" : "UI控件",

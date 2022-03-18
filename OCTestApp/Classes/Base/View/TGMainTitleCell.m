@@ -24,24 +24,25 @@
 }
 
 - (void)setup {
-    [self.mainTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView).offset(16);
-        make.top.equalTo(self.contentView).offset(8);
-    }];
-    
-    [self.subTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView).offset(16);
-        make.top.equalTo(self.mainTitleLabel.mas_bottom).offset(8);
-        make.bottom.equalTo(self.contentView).offset(-8);
-    }];
     
     [self.contentBgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(5);
         make.left.equalTo(self.contentView).offset(5);
         make.right.equalTo(self.contentView).offset(-5);
+        make.bottom.equalTo(self.contentView).offset(-5);
+
         make.height.equalTo(@64);
     }];
     
+    [self.mainTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.contentBgView).offset(11);
+        make.top.equalTo(self.contentBgView).offset(8);
+    }];
+    
+    [self.subTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.contentBgView).offset(11);
+        make.bottom.equalTo(self.contentBgView).offset(-8);
+    }];
 }
 
 

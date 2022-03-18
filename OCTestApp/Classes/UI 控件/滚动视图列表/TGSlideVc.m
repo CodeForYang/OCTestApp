@@ -26,9 +26,9 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(showNextView)];
     NSArray *titles = @[@"今天",@"是个",@"好日子",@"心想的",@"事儿",@"都能成",@"明天",@"是个",@"好日子",@"打开了家门",@"咱迎春风",@"~~~"];
     NSMutableArray *vcs = [[NSMutableArray alloc] init];
-    for (NSInteger i = 0; i < titles.count; i++) {
-        <#statements#>
-    }
+//    for (NSInteger i = 0; i < titles.count; i++) {
+//        <#statements#>
+//    }
 }
 
 - (void)showNextView {
