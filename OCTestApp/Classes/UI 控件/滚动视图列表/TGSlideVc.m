@@ -29,9 +29,44 @@
 //    for (NSInteger i = 0; i < titles.count; i++) {
 //        <#statements#>
 //    }
+    
+    
+    UIViewController *testVc = [UIViewController new];
+    testVc.view.backgroundColor = [UIColor redColor];
+    
+    NSInteger a = 10;
+    TGFormatterModel *m = [[TGFormatterModel alloc] initWithViewControllers:@"My handsome boy %@ was the coolst guy %@",@"Edward" ,@"TT"];
+    [NSString stringWithFormat:@"xxx"];
+    
 }
 
 - (void)showNextView {
     _slideSwitch.headerView.selectedIndex += 1;
 }
+@end
+
+
+@implementation TGFormatterModel
+
+- (instancetype)initWithViewControllers:(UIViewController *)firstVc, ... {
+    if (self = [super init]) {
+        NSMutableArray *params = [NSMutableArray array];
+        
+        va_list argumentsList;
+        if (firstVc) {
+            [params addObject:firstVc];
+            va_start(argumentsList, firstVc);
+            
+            NSString *eachObject;
+            
+            while ((eachObject = va_arg(argumentsList, NSString *))) {
+                [params addObject:eachObject];
+                va_end(argumentsList);
+            }
+        }
+    }
+    
+    return self;
+}
+
 @end

@@ -29,8 +29,11 @@
 		D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772C127D9DEEB00ADDE85 /* MyObject.m */; };
 		D57772F627D9F6B700ADDE85 /* _YHZombie_.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772F527D9F6B700ADDE85 /* _YHZombie_.m */; };
 		D57772F927D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772F827D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D57F95B527EABBE50018D228 /* TGDispatchGroupVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D57F95B427EABBE50018D228 /* TGDispatchGroupVc.m */; };
 		D57F9FFE27DB20B100B1680F /* TGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57F9FFD27DB20B100B1680F /* TGViewController.m */; };
 		D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */ = {isa = PBXBuildFile; fileRef = D57FA00027DB26B200B1680F /* YHMallocScrbble.m */; };
+		D581A24427E9AD8200FD2B0E /* NSObject+TGInitialize.m in Sources */ = {isa = PBXBuildFile; fileRef = D581A24327E9AD8200FD2B0E /* NSObject+TGInitialize.m */; };
+		D581A24727E9B49B00FD2B0E /* TGTestVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D581A24627E9B49B00FD2B0E /* TGTestVc.m */; };
 		D58303CA27E4260000D6B701 /* TGLockVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303C927E4260000D6B701 /* TGLockVc.m */; };
 		D58303D427E4639F00D6B701 /* STMAssembleMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303CC27E4639E00D6B701 /* STMAssembleMaker.m */; };
 		D58303D527E4639F00D6B701 /* STMPartMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303CE27E4639E00D6B701 /* STMPartMaker.m */; };
@@ -113,10 +116,16 @@
 		D57772F527D9F6B700ADDE85 /* _YHZombie_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _YHZombie_.m; sourceTree = "<group>"; };
 		D57772F727D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YHZombiesNSObject.h"; sourceTree = "<group>"; };
 		D57772F827D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YHZombiesNSObject.m"; sourceTree = "<group>"; };
+		D57F95B327EABBE50018D228 /* TGDispatchGroupVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGDispatchGroupVc.h; sourceTree = "<group>"; };
+		D57F95B427EABBE50018D228 /* TGDispatchGroupVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGDispatchGroupVc.m; sourceTree = "<group>"; };
 		D57F9FFC27DB20B100B1680F /* TGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGViewController.h; sourceTree = "<group>"; };
 		D57F9FFD27DB20B100B1680F /* TGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGViewController.m; sourceTree = "<group>"; };
 		D57F9FFF27DB26B200B1680F /* YHMallocScrbble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHMallocScrbble.h; sourceTree = "<group>"; };
 		D57FA00027DB26B200B1680F /* YHMallocScrbble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHMallocScrbble.m; sourceTree = "<group>"; };
+		D581A24227E9AD8200FD2B0E /* NSObject+TGInitialize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TGInitialize.h"; sourceTree = "<group>"; };
+		D581A24327E9AD8200FD2B0E /* NSObject+TGInitialize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TGInitialize.m"; sourceTree = "<group>"; };
+		D581A24527E9B49B00FD2B0E /* TGTestVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGTestVc.h; sourceTree = "<group>"; };
+		D581A24627E9B49B00FD2B0E /* TGTestVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGTestVc.m; sourceTree = "<group>"; };
 		D58303C827E4260000D6B701 /* TGLockVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGLockVc.h; sourceTree = "<group>"; };
 		D58303C927E4260000D6B701 /* TGLockVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLockVc.m; sourceTree = "<group>"; };
 		D58303CC27E4639E00D6B701 /* STMAssembleMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMAssembleMaker.m; sourceTree = "<group>"; };
@@ -386,6 +395,15 @@
 			path = "僵尸对象";
 			sourceTree = "<group>";
 		};
+		D57F95B227EABBCB0018D228 /* GCD-Group */ = {
+			isa = PBXGroup;
+			children = (
+				D57F95B327EABBE50018D228 /* TGDispatchGroupVc.h */,
+				D57F95B427EABBE50018D228 /* TGDispatchGroupVc.m */,
+			);
+			path = "GCD-Group";
+			sourceTree = "<group>";
+		};
 		D57FA00527DB27EC00B1680F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +448,7 @@
 		D57FA00F27DB322E00B1680F /* 底层原理 */ = {
 			isa = PBXGroup;
 			children = (
+				D57F95B227EABBCB0018D228 /* GCD-Group */,
 				D58303C727E425CC00D6B701 /* 自旋&互斥锁 */,
 				D57772BC27D9DDFF00ADDE85 /* 僵尸对象 */,
 			);
@@ -441,6 +460,10 @@
 			children = (
 				D58303C827E4260000D6B701 /* TGLockVc.h */,
 				D58303C927E4260000D6B701 /* TGLockVc.m */,
+				D581A24227E9AD8200FD2B0E /* NSObject+TGInitialize.h */,
+				D581A24327E9AD8200FD2B0E /* NSObject+TGInitialize.m */,
+				D581A24527E9B49B00FD2B0E /* TGTestVc.h */,
+				D581A24627E9B49B00FD2B0E /* TGTestVc.m */,
 			);
 			path = "自旋&互斥锁";
 			sourceTree = "<group>";
@@ -723,13 +746,16 @@
 			files = (
 				D57772F627D9F6B700ADDE85 /* _YHZombie_.m in Sources */,
 				D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */,
+				D581A24427E9AD8200FD2B0E /* NSObject+TGInitialize.m in Sources */,
 				D58A216F27DC8B1F00BD4CEC /* TGSlideSegementCell.m in Sources */,
 				D589A40927DF213A005E4DB1 /* CollectionViewController.m in Sources */,
 				D58A216627DC498000BD4CEC /* TGSlideSwitchHeaderView.m in Sources */,
 				D58303D727E4639F00D6B701 /* STMPartView.m in Sources */,
+				D57F95B527EABBE50018D228 /* TGDispatchGroupVc.m in Sources */,
 				D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */,
 				D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */,
 				D589A40A27DF213A005E4DB1 /* TableViewController.m in Sources */,
+				D581A24727E9B49B00FD2B0E /* TGTestVc.m in Sources */,
 				D58303DA27E463CF00D6B701 /* TGAutoLayoutController.m in Sources */,
 				D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */,
 				D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */,

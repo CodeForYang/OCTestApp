@@ -13,4 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+@interface TGFormatterModel : NSObject
+- (instancetype)initWithViewControllers:(UIViewController *)firstVc, ... ;
+
+@end
 NS_ASSUME_NONNULL_END

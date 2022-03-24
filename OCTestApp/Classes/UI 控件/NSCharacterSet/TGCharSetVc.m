@@ -24,12 +24,12 @@
     NSString *bananas = @"123.321abc137d efg/hij kl";
     NSString *separatorString = @"fg";
     BOOL result;
-    NSString *container;
+    NSString *container1;
 
     NSScanner *aScanner = [NSScanner scannerWithString:bananas];
-    result = [aScanner scanUpToString:separatorString intoString:&container];
+    result = [aScanner scanString:@"123.321abc137" intoString:&container1];
     
-    NSLog(@"扫描仪所在的位置: %lu - %@", aScanner.scanLocation, container);
+    NSLog(@"扫描仪所在的位置: %lu - %@", aScanner.scanLocation, container1);
     
     
     

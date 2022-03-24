@@ -26,11 +26,8 @@
 - (void)setup {
     
     [self.contentBgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.contentView).offset(5);
-        make.left.equalTo(self.contentView).offset(5);
+        make.top.left.equalTo(self.contentView).offset(5);
         make.right.equalTo(self.contentView).offset(-5);
-        make.bottom.equalTo(self.contentView).offset(-5);
-
         make.height.equalTo(@64);
     }];
     

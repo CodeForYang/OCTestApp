@@ -13,6 +13,10 @@
                         "title" : "自旋锁&互斥锁",
                         "subTitle" : "automatic vs synchronized",
                         "icon" : "img_icon"
+                    },{
+                        "title" : "dispatch_group_leave",
+                        "subTitle" : "dispatch_group_enter vs dispatch_group_leave",
+                        "icon" : "img_icon"
                     }
                     
                 ]

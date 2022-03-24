@@ -16,6 +16,7 @@
 #import "TGSlideVc.h"
 #import "TGAutoLayoutController.h"
 #import "TGCharSetVc.h"
+#import "TGDispatchGroupVc.h"
 
 @interface TGBaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -110,7 +111,12 @@
             [self.navigationController pushViewController:[ZoobieVc new] animated:YES];
         } else if (indexPath.row == 1) {
             [self.navigationController pushViewController:[TGLockVc new] animated:YES];
+        } else if (indexPath.row == 2) {
+            [self.navigationController pushViewController:[TGDispatchGroupVc new] animated:YES];
         }
+        
+
+
     } else if (indexPath.section == 1) {
         if (indexPath.row == 0) {
             [self.navigationController pushViewController:[TGSlideVc new] animated:YES];
