@@ -9,6 +9,7 @@
 
 @interface TGBaseViewController : UIViewController
 
++ (UIViewController *)getCurrentVC;
 
 @end
 

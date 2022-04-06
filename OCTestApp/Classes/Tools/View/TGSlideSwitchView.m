@@ -34,6 +34,7 @@ UIPageViewControllerDelegate,UIPageViewControllerDataSource, UIScrollViewDelegat
     self.backgroundColor = [UIColor whiteColor];
     
     self.headerView = [TGSlideSwitchHeaderView new];
+    [self addSubview:self.headerView];
     self.headerView.delegate = self;
     
     self.pageVc = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
@@ -65,6 +66,8 @@ UIPageViewControllerDelegate,UIPageViewControllerDataSource, UIScrollViewDelegat
 - (void)showInViewController:(UIViewController *)viewController {
     [viewController addChildViewController:_pageVc];
     [viewController.view addSubview:self];
+    
+    [_headerView reloadData];
 }
 
 - (void)showInNavigationController:(UINavigationController *)navigationController {
@@ -74,7 +77,16 @@ UIPageViewControllerDelegate,UIPageViewControllerDataSource, UIScrollViewDelegat
     _pageVc.view.frame = self.bounds;
     _headerView.showTitlesInNavBar = YES;
     _showHeaderViewInNavigationBar = YES;
+    
+    [_headerView reloadData];
 }
+
+
+- (void)setTitles:(NSArray *)titles {
+    _titles = titles;
+    self.headerView.titles = titles;
+}
+
 
 - (nullable UIViewController *)pageViewController:(nonnull UIPageViewController *)pageViewController viewControllerAfterViewController:(nonnull UIViewController *)viewController {
     

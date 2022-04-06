@@ -30,4 +30,22 @@
     return 0;
 }
 
++ (CGFloat)screenW {
+
+    if (@available(iOS 11.0, *)) {
+        return [UIApplication sharedApplication].keyWindow.bounds.size.width;
+    } else {
+        return [UIScreen mainScreen].bounds.size.width;
+    }
+}
+
+
++ (CGFloat)screenH {
+    if (@available(iOS 11.0, *)) {
+        return [UIApplication sharedApplication].keyWindow.bounds.size.height;
+    } else {
+        return [UIScreen mainScreen].bounds.size.height;
+    }
+}
+
 @end

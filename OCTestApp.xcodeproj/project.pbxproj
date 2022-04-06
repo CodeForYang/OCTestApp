@@ -29,6 +29,15 @@
 		D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772C127D9DEEB00ADDE85 /* MyObject.m */; };
 		D57772F627D9F6B700ADDE85 /* _YHZombie_.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772F527D9F6B700ADDE85 /* _YHZombie_.m */; };
 		D57772F927D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D57772F827D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D57A5CD427FD32C00050482C /* TGRuntimeTestVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D57A5CD327FD32C00050482C /* TGRuntimeTestVc.m */; };
+		D57A680D27F84BC400E36D9E /* TGView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A67FF27F84BC400E36D9E /* TGView+.swift */; };
+		D57A680E27F84BC400E36D9E /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D57A680127F84BC400E36D9E /* UIColor+Hex.m */; };
+		D57A680F27F84BC400E36D9E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D57A680227F84BC400E36D9E /* UIView+Frame.m */; };
+		D57A681027F84BC400E36D9E /* UIColor+TGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D57A680627F84BC400E36D9E /* UIColor+TGExtension.m */; };
+		D57A681227F84BC400E36D9E /* UIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = D57A680927F84BC400E36D9E /* UIButton+EnlargeEdge.m */; };
+		D57A681327F84BC400E36D9E /* TGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D57A680A27F84BC400E36D9E /* TGButton.m */; };
+		D57A681527F84BD000E36D9E /* standard(标准基础组件库) in Resources */ = {isa = PBXBuildFile; fileRef = D57A681427F84BD000E36D9E /* standard(标准基础组件库) */; };
+		D57CEEF327F2EF0E0048CF1D /* TGGCDVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D57CEEF227F2EF0E0048CF1D /* TGGCDVc.m */; };
 		D57F95B527EABBE50018D228 /* TGDispatchGroupVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D57F95B427EABBE50018D228 /* TGDispatchGroupVc.m */; };
 		D57F9FFE27DB20B100B1680F /* TGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57F9FFD27DB20B100B1680F /* TGViewController.m */; };
 		D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */ = {isa = PBXBuildFile; fileRef = D57FA00027DB26B200B1680F /* YHMallocScrbble.m */; };
@@ -41,14 +50,17 @@
 		D58303D727E4639F00D6B701 /* STMPartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303D327E4639E00D6B701 /* STMPartView.m */; };
 		D58303DA27E463CF00D6B701 /* TGAutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303D927E463CF00D6B701 /* TGAutoLayoutController.m */; };
 		D58303DF27E46DDF00D6B701 /* TGCharSetVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303DE27E46DDF00D6B701 /* TGCharSetVc.m */; };
-		D589A40927DF213A005E4DB1 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D589A40527DF213A005E4DB1 /* CollectionViewController.m */; };
-		D589A40A27DF213A005E4DB1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D589A40827DF213A005E4DB1 /* TableViewController.m */; };
 		D58A215D27DC336000BD4CEC /* UIView+TGTopInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */; };
 		D58A216027DC48C600BD4CEC /* TGSlideVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A215F27DC48C600BD4CEC /* TGSlideVc.m */; };
 		D58A216627DC498000BD4CEC /* TGSlideSwitchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216527DC498000BD4CEC /* TGSlideSwitchHeaderView.m */; };
 		D58A216927DC813100BD4CEC /* TGSlideSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216827DC813100BD4CEC /* TGSlideSwitchView.m */; };
 		D58A216C27DC85CA00BD4CEC /* TGBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216B27DC85CA00BD4CEC /* TGBaseView.m */; };
 		D58A216F27DC8B1F00BD4CEC /* TGSlideSegementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216E27DC8B1F00BD4CEC /* TGSlideSegementCell.m */; };
+		D58E3E6927EEA51000A33279 /* IconFontModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E3E6827EEA51000A33279 /* IconFontModel.m */; };
+		D58E3E6C27EEA52A00A33279 /* normalFont.json in Resources */ = {isa = PBXBuildFile; fileRef = D58E3E6A27EEA52A00A33279 /* normalFont.json */; };
+		D58E3E6D27EEA52A00A33279 /* normalFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D58E3E6B27EEA52A00A33279 /* normalFont.ttf */; };
+		D5A7AE7227ED950D00341BF8 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A7AE6E27ED950D00341BF8 /* CollectionViewController.m */; };
+		D5A7AE7327ED950D00341BF8 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A7AE7027ED950D00341BF8 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +128,24 @@
 		D57772F527D9F6B700ADDE85 /* _YHZombie_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _YHZombie_.m; sourceTree = "<group>"; };
 		D57772F727D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YHZombiesNSObject.h"; sourceTree = "<group>"; };
 		D57772F827D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YHZombiesNSObject.m"; sourceTree = "<group>"; };
+		D57A5CD227FD32C00050482C /* TGRuntimeTestVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGRuntimeTestVc.h; sourceTree = "<group>"; };
+		D57A5CD327FD32C00050482C /* TGRuntimeTestVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGRuntimeTestVc.m; sourceTree = "<group>"; };
+		D57A67FE27F84BC400E36D9E /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		D57A67FF27F84BC400E36D9E /* TGView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TGView+.swift"; sourceTree = "<group>"; };
+		D57A680027F84BC400E36D9E /* SwiftApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		D57A680127F84BC400E36D9E /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		D57A680227F84BC400E36D9E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		D57A680327F84BC400E36D9E /* TGButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGButton.h; sourceTree = "<group>"; };
+		D57A680427F84BC400E36D9E /* UIButton+EnlargeEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeEdge.h"; sourceTree = "<group>"; };
+		D57A680627F84BC400E36D9E /* UIColor+TGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TGExtension.m"; sourceTree = "<group>"; };
+		D57A680727F84BC400E36D9E /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		D57A680927F84BC400E36D9E /* UIButton+EnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeEdge.m"; sourceTree = "<group>"; };
+		D57A680A27F84BC400E36D9E /* TGButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGButton.m; sourceTree = "<group>"; };
+		D57A680B27F84BC400E36D9E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		D57A680C27F84BC400E36D9E /* UIColor+TGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TGExtension.h"; sourceTree = "<group>"; };
+		D57A681427F84BD000E36D9E /* standard(标准基础组件库) */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "standard(标准基础组件库)"; sourceTree = "<group>"; };
+		D57CEEF127F2EF0E0048CF1D /* TGGCDVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGGCDVc.h; sourceTree = "<group>"; };
+		D57CEEF227F2EF0E0048CF1D /* TGGCDVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGGCDVc.m; sourceTree = "<group>"; };
 		D57F95B327EABBE50018D228 /* TGDispatchGroupVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGDispatchGroupVc.h; sourceTree = "<group>"; };
 		D57F95B427EABBE50018D228 /* TGDispatchGroupVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGDispatchGroupVc.m; sourceTree = "<group>"; };
 		D57F9FFC27DB20B100B1680F /* TGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGViewController.h; sourceTree = "<group>"; };
@@ -140,10 +170,6 @@
 		D58303D927E463CF00D6B701 /* TGAutoLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGAutoLayoutController.m; sourceTree = "<group>"; };
 		D58303DD27E46DDF00D6B701 /* TGCharSetVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGCharSetVc.h; sourceTree = "<group>"; };
 		D58303DE27E46DDF00D6B701 /* TGCharSetVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGCharSetVc.m; sourceTree = "<group>"; };
-		D589A40527DF213A005E4DB1 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
-		D589A40627DF213A005E4DB1 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		D589A40727DF213A005E4DB1 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
-		D589A40827DF213A005E4DB1 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		D58A215B27DC336000BD4CEC /* UIView+TGTopInsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TGTopInsets.h"; sourceTree = "<group>"; };
 		D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TGTopInsets.m"; sourceTree = "<group>"; };
 		D58A215E27DC48C600BD4CEC /* TGSlideVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideVc.h; sourceTree = "<group>"; };
@@ -156,6 +182,14 @@
 		D58A216B27DC85CA00BD4CEC /* TGBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGBaseView.m; sourceTree = "<group>"; };
 		D58A216D27DC8B1F00BD4CEC /* TGSlideSegementCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideSegementCell.h; sourceTree = "<group>"; };
 		D58A216E27DC8B1F00BD4CEC /* TGSlideSegementCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSlideSegementCell.m; sourceTree = "<group>"; };
+		D58E3E6727EEA51000A33279 /* IconFontModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IconFontModel.h; sourceTree = "<group>"; };
+		D58E3E6827EEA51000A33279 /* IconFontModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IconFontModel.m; sourceTree = "<group>"; };
+		D58E3E6A27EEA52A00A33279 /* normalFont.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = normalFont.json; sourceTree = "<group>"; };
+		D58E3E6B27EEA52A00A33279 /* normalFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = normalFont.ttf; sourceTree = "<group>"; };
+		D5A7AE6E27ED950D00341BF8 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		D5A7AE6F27ED950D00341BF8 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		D5A7AE7027ED950D00341BF8 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		D5A7AE7127ED950D00341BF8 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		F8C71D35620A93DEE16355ED /* Pods-OCTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.release.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FCE2A2821832B5659FD4B622 /* Pods-OCTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -262,6 +296,7 @@
 		D527833F27D8920D00C7A0F8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D5A7AE6D27ED94F600341BF8 /* Support */,
 				D57FA00F27DB322E00B1680F /* 底层原理 */,
 				D57FA00E27DB322400B1680F /* UI 控件 */,
 				D57772BB27D9DDF400ADDE85 /* Base */,
@@ -283,10 +318,14 @@
 		D527834127D8929700C7A0F8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D58E3E6A27EEA52A00A33279 /* normalFont.json */,
+				D58E3E6B27EEA52A00A33279 /* normalFont.ttf */,
 				D527830F27D88FDD00C7A0F8 /* TGBaseViewController.h */,
 				D527831027D88FDD00C7A0F8 /* TGBaseViewController.m */,
 				D57F9FFC27DB20B100B1680F /* TGViewController.h */,
 				D57F9FFD27DB20B100B1680F /* TGViewController.m */,
+				D58E3E6727EEA51000A33279 /* IconFontModel.h */,
+				D58E3E6827EEA51000A33279 /* IconFontModel.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -294,6 +333,8 @@
 		D527834227D8938F00C7A0F8 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D57A681427F84BD000E36D9E /* standard(标准基础组件库) */,
+				D57A67FD27F84BC400E36D9E /* TGTools */,
 				D527835127D8AECE00C7A0F8 /* Model */,
 				D527834927D8A1B500C7A0F8 /* util */,
 				D527834627D893C600C7A0F8 /* View */,
@@ -311,10 +352,6 @@
 				D58A215B27DC336000BD4CEC /* UIView+TGTopInsets.h */,
 				D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */,
 				D58A216727DC813100BD4CEC /* TGSlideSwitchView.h */,
-				D589A40727DF213A005E4DB1 /* CollectionViewController.h */,
-				D589A40527DF213A005E4DB1 /* CollectionViewController.m */,
-				D589A40627DF213A005E4DB1 /* TableViewController.h */,
-				D589A40827DF213A005E4DB1 /* TableViewController.m */,
 				D58A216827DC813100BD4CEC /* TGSlideSwitchView.m */,
 				D58A216427DC498000BD4CEC /* TGSlideSwitchHeaderView.h */,
 				D58A216527DC498000BD4CEC /* TGSlideSwitchHeaderView.m */,
@@ -395,6 +432,44 @@
 			path = "僵尸对象";
 			sourceTree = "<group>";
 		};
+		D57A5CD127FD32B20050482C /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				D57A5CD227FD32C00050482C /* TGRuntimeTestVc.h */,
+				D57A5CD327FD32C00050482C /* TGRuntimeTestVc.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		D57A67FD27F84BC400E36D9E /* TGTools */ = {
+			isa = PBXGroup;
+			children = (
+				D57A67FE27F84BC400E36D9E /* UtilsMacros.h */,
+				D57A67FF27F84BC400E36D9E /* TGView+.swift */,
+				D57A680027F84BC400E36D9E /* SwiftApp-Bridging-Header.h */,
+				D57A680127F84BC400E36D9E /* UIColor+Hex.m */,
+				D57A680227F84BC400E36D9E /* UIView+Frame.m */,
+				D57A680327F84BC400E36D9E /* TGButton.h */,
+				D57A680427F84BC400E36D9E /* UIButton+EnlargeEdge.h */,
+				D57A680627F84BC400E36D9E /* UIColor+TGExtension.m */,
+				D57A680727F84BC400E36D9E /* UIColor+Hex.h */,
+				D57A680927F84BC400E36D9E /* UIButton+EnlargeEdge.m */,
+				D57A680A27F84BC400E36D9E /* TGButton.m */,
+				D57A680B27F84BC400E36D9E /* UIView+Frame.h */,
+				D57A680C27F84BC400E36D9E /* UIColor+TGExtension.h */,
+			);
+			path = TGTools;
+			sourceTree = "<group>";
+		};
+		D57CEEF027F2EEE20048CF1D /* GCD队列 */ = {
+			isa = PBXGroup;
+			children = (
+				D57CEEF127F2EF0E0048CF1D /* TGGCDVc.h */,
+				D57CEEF227F2EF0E0048CF1D /* TGGCDVc.m */,
+			);
+			path = "GCD队列";
+			sourceTree = "<group>";
+		};
 		D57F95B227EABBCB0018D228 /* GCD-Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +523,8 @@
 		D57FA00F27DB322E00B1680F /* 底层原理 */ = {
 			isa = PBXGroup;
 			children = (
+				D57A5CD127FD32B20050482C /* Runtime */,
+				D57CEEF027F2EEE20048CF1D /* GCD队列 */,
 				D57F95B227EABBCB0018D228 /* GCD-Group */,
 				D58303C727E425CC00D6B701 /* 自旋&互斥锁 */,
 				D57772BC27D9DDFF00ADDE85 /* 僵尸对象 */,
@@ -492,6 +569,17 @@
 				D58303DE27E46DDF00D6B701 /* TGCharSetVc.m */,
 			);
 			path = NSCharacterSet;
+			sourceTree = "<group>";
+		};
+		D5A7AE6D27ED94F600341BF8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7AE6F27ED950D00341BF8 /* CollectionViewController.h */,
+				D5A7AE6E27ED950D00341BF8 /* CollectionViewController.m */,
+				D5A7AE7127ED950D00341BF8 /* TableViewController.h */,
+				D5A7AE7027ED950D00341BF8 /* TableViewController.m */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		FA203BC936F7E790CE9ADADC /* Pods */ = {
@@ -615,8 +703,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D527831927D88FDD00C7A0F8 /* LaunchScreen.storyboard in Resources */,
+				D58E3E6D27EEA52A00A33279 /* normalFont.ttf in Resources */,
 				D527831627D88FDD00C7A0F8 /* Assets.xcassets in Resources */,
 				D527834827D89A7700C7A0F8 /* contents.json in Resources */,
+				D58E3E6C27EEA52A00A33279 /* normalFont.json in Resources */,
+				D57A681527F84BD000E36D9E /* standard(标准基础组件库) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,39 +836,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				D57772F627D9F6B700ADDE85 /* _YHZombie_.m in Sources */,
+				D57A680E27F84BC400E36D9E /* UIColor+Hex.m in Sources */,
 				D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */,
 				D581A24427E9AD8200FD2B0E /* NSObject+TGInitialize.m in Sources */,
 				D58A216F27DC8B1F00BD4CEC /* TGSlideSegementCell.m in Sources */,
-				D589A40927DF213A005E4DB1 /* CollectionViewController.m in Sources */,
 				D58A216627DC498000BD4CEC /* TGSlideSwitchHeaderView.m in Sources */,
 				D58303D727E4639F00D6B701 /* STMPartView.m in Sources */,
 				D57F95B527EABBE50018D228 /* TGDispatchGroupVc.m in Sources */,
+				D5A7AE7227ED950D00341BF8 /* CollectionViewController.m in Sources */,
 				D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */,
 				D527836027D8DCDC00C7A0F8 /* UIWindow+TGFlex.m in Sources */,
-				D589A40A27DF213A005E4DB1 /* TableViewController.m in Sources */,
 				D581A24727E9B49B00FD2B0E /* TGTestVc.m in Sources */,
 				D58303DA27E463CF00D6B701 /* TGAutoLayoutController.m in Sources */,
 				D57772C227D9DEEB00ADDE85 /* MyObject.m in Sources */,
 				D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */,
 				D58303CA27E4260000D6B701 /* TGLockVc.m in Sources */,
+				D57A681027F84BC400E36D9E /* UIColor+TGExtension.m in Sources */,
 				D58303D627E4639F00D6B701 /* STMAssembleView.m in Sources */,
 				D58A216927DC813100BD4CEC /* TGSlideSwitchView.m in Sources */,
+				D57A680F27F84BC400E36D9E /* UIView+Frame.m in Sources */,
 				D57772BF27D9DE4A00ADDE85 /* ZoobieVc.m in Sources */,
 				D57F9FFE27DB20B100B1680F /* TGViewController.m in Sources */,
 				D527831127D88FDD00C7A0F8 /* TGBaseViewController.m in Sources */,
 				D58A216027DC48C600BD4CEC /* TGSlideVc.m in Sources */,
 				D58A215D27DC336000BD4CEC /* UIView+TGTopInsets.m in Sources */,
+				D57CEEF327F2EF0E0048CF1D /* TGGCDVc.m in Sources */,
 				D58303D427E4639F00D6B701 /* STMAssembleMaker.m in Sources */,
 				D58303D527E4639F00D6B701 /* STMPartMaker.m in Sources */,
 				D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */,
+				D57A681327F84BC400E36D9E /* TGButton.m in Sources */,
 				D58303DF27E46DDF00D6B701 /* TGCharSetVc.m in Sources */,
 				D57772F927D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m in Sources */,
 				D527835D27D8C8E400C7A0F8 /* TGMainTitleCell.m in Sources */,
 				D527830B27D88FDD00C7A0F8 /* AppDelegate.m in Sources */,
+				D5A7AE7327ED950D00341BF8 /* TableViewController.m in Sources */,
+				D57A681227F84BC400E36D9E /* UIButton+EnlargeEdge.m in Sources */,
 				D58A216C27DC85CA00BD4CEC /* TGBaseView.m in Sources */,
 				D527834C27D8A1D700C7A0F8 /* TGNetworkManager.m in Sources */,
+				D57A5CD427FD32C00050482C /* TGRuntimeTestVc.m in Sources */,
 				D527835927D8B19400C7A0F8 /* TGMainViewModel.m in Sources */,
+				D57A680D27F84BC400E36D9E /* TGView+.swift in Sources */,
 				D527831C27D88FDD00C7A0F8 /* main.m in Sources */,
+				D58E3E6927EEA51000A33279 /* IconFontModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -954,6 +1054,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangpei.www.OCTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -976,6 +1077,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangpei.www.OCTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -984,6 +1086,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41850D1B1618C528ABDC8DAF /* Pods-OCTestAppTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJLKSR7LRL;
@@ -1005,6 +1108,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CEC50573A1BBFC25235EBB9D /* Pods-OCTestAppTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJLKSR7LRL;
@@ -1026,6 +1130,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96510BF008C2BFBFE7314029 /* Pods-OCTestApp-OCTestAppUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJLKSR7LRL;
 				INFOPLIST_FILE = OCTestAppUITests/Info.plist;
@@ -1045,6 +1150,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 073619B84554DFE0A17C8F50 /* Pods-OCTestApp-OCTestAppUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJLKSR7LRL;
 				INFOPLIST_FILE = OCTestAppUITests/Info.plist;

@@ -12,17 +12,22 @@
 #import "TGMainTitleCell.h"
 #import "ZoobieVc.h"
 #import "TGViewController.h"
-#import "TGLockVc.h"
-#import "TGSlideVc.h"
-#import "TGAutoLayoutController.h"
-#import "TGCharSetVc.h"
-#import "TGDispatchGroupVc.h"
+#import "IconFontModel.h"
+
+//#import "TGLockVc.h"
+//#import "TGSlideVc.h"
+//#import "TGAutoLayoutController.h"
+//#import "TGCharSetVc.h"
+//#import "TGDispatchGroupVc.h"
+//#import "TGGCDVc.h"
+//#import "TGRuntimeTestVc.h"
 
 @interface TGBaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) TGBaseTableView *tableView;
 @property (nonatomic, strong) TGMainViewModel *vm;
 
+@property (nonatomic, strong) NSMutableArray *vcArray;
 @end
 
 @implementation TGBaseViewController
@@ -48,8 +53,30 @@
         [self.navigationController pushViewController:[NSClassFromString(clsName) new] animated:NO];
     }
     
+    self.vcArray = @[
+        @[@"ZoobieVc", @"TGLockVc", @"TGDispatchGroupVc", @"TGGCDVc", @"TGRuntimeTestVc"],
+        @[@"TGSlideVc", @"TGAutoLayoutController", @"TGCharSetVc"]
+    ].mutableCopy;
+    
+//    [self printIconFont];
+}
+#define TGTLog(format, ...) printf("%s\n", [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String])
+- (void)printIconFont {
+    NSString *p = [[NSBundle mainBundle] pathForResource:@"normalFont.json" ofType:nil];
+    
+    NSData *jsonData = [[NSData alloc] initWithContentsOfFile:p];
+    
+    id json = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
+    ;
+    
+    NSArray *array = [NSArray yy_modelArrayWithClass:IconFontModel.class json:json[@"glyphs"]];
+    
+    for (IconFontModel *m in array) {
+        TGTLog(@"public static let %@ = \"\\u{%@}\"", m.name, m.unicode);
+    }
     
 }
+
 
 - (void)viewDidAppear:(BOOL)animated {
     
@@ -71,7 +98,32 @@
 }
 
 
++ (UIViewController *)getCurrentVC {
+    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    UIViewController *currentVC = [self getCurrentVCFrom:rootViewController];
+    return currentVC;
+}
 
++ (UIViewController *)getCurrentVCFrom:(UIViewController *)rootVC{
+    
+    UIViewController *currentVC;
+    
+    if ([rootVC presentedViewController]) {
+        rootVC = [self getCurrentVCFrom:[rootVC presentedViewController]];
+    }
+    
+    if ([rootVC isKindOfClass:[UITabBarController class]]) {
+        currentVC = [self getCurrentVCFrom:[(UITabBarController *)rootVC selectedViewController]];
+        
+    } else if ([rootVC isKindOfClass:[UINavigationController class]]){
+        currentVC = [self getCurrentVCFrom:[(UINavigationController *)rootVC visibleViewController]];
+        
+    } else {
+        currentVC = rootVC;
+        
+    }
+    return currentVC;
+}
 
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -106,27 +158,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        if (indexPath.row == 0) {
-            [self.navigationController pushViewController:[ZoobieVc new] animated:YES];
-        } else if (indexPath.row == 1) {
-            [self.navigationController pushViewController:[TGLockVc new] animated:YES];
-        } else if (indexPath.row == 2) {
-            [self.navigationController pushViewController:[TGDispatchGroupVc new] animated:YES];
-        }
-        
-
-
-    } else if (indexPath.section == 1) {
-        if (indexPath.row == 0) {
-            [self.navigationController pushViewController:[TGSlideVc new] animated:YES];
-        } else if (indexPath.row == 1) {
-            [self.navigationController pushViewController:[TGAutoLayoutController new] animated:YES];
-        } else if (indexPath.row == 2) {
-            [self.navigationController pushViewController:[TGCharSetVc new] animated:YES];
-        }
-        
-        
+    
+    NSString *vcStr = _vcArray[indexPath.section][indexPath.row];
+    UIViewController *vc = [NSClassFromString(vcStr) new];
+    if ([vc isKindOfClass:UIViewController.class]) {
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

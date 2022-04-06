@@ -36,14 +36,16 @@ static const CGFloat ItemMaxScale = 1.1f;
 
 - (void)setupUI {
     
+    self.backgroundColor = [UIColor whiteColor];
     
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.minimumInteritemSpacing = ItemMargin;
-    [layout registerClass:TGSlideSegementCell.class forDecorationViewOfKind:@"TGSlideSegementCell"];
+//    [layout registerClass:TGSlideSegementCell.class forDecorationViewOfKind:@"TGSlideSegementCell"];
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     layout.sectionInset = UIEdgeInsetsMake(0, ItemMargin, 0, ItemMargin);
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
+    [self.collectionView registerClass:TGSlideSegementCell.class forCellWithReuseIdentifier:@"TGSlideSegementCell"];
     self.collectionView.showsHorizontalScrollIndicator = NO;
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
@@ -147,6 +149,9 @@ static const CGFloat ItemMaxScale = 1.1f;
     
 }
 
+- (void)reloadData {
+    [self.collectionView reloadData];
+}
 - (void)updateShadowPosition:(CGFloat)progress {
     
     NSInteger nextIndex = progress > 1 ? _selectedIndex + 1 : _selectedIndex - 1;
