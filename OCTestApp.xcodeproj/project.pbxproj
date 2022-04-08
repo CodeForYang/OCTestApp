@@ -50,6 +50,8 @@
 		D58303D727E4639F00D6B701 /* STMPartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303D327E4639E00D6B701 /* STMPartView.m */; };
 		D58303DA27E463CF00D6B701 /* TGAutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303D927E463CF00D6B701 /* TGAutoLayoutController.m */; };
 		D58303DF27E46DDF00D6B701 /* TGCharSetVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D58303DE27E46DDF00D6B701 /* TGCharSetVc.m */; };
+		D5884F7427FFCF49002C8B50 /* TGPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D5884F7327FFCF49002C8B50 /* TGPerson.m */; };
+		D5884F7A280024FF002C8B50 /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = D5884F79280024FF002C8B50 /* UIViewController+Logging.m */; };
 		D58A215D27DC336000BD4CEC /* UIView+TGTopInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */; };
 		D58A216027DC48C600BD4CEC /* TGSlideVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A215F27DC48C600BD4CEC /* TGSlideVc.m */; };
 		D58A216627DC498000BD4CEC /* TGSlideSwitchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A216527DC498000BD4CEC /* TGSlideSwitchHeaderView.m */; };
@@ -170,6 +172,10 @@
 		D58303D927E463CF00D6B701 /* TGAutoLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGAutoLayoutController.m; sourceTree = "<group>"; };
 		D58303DD27E46DDF00D6B701 /* TGCharSetVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGCharSetVc.h; sourceTree = "<group>"; };
 		D58303DE27E46DDF00D6B701 /* TGCharSetVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGCharSetVc.m; sourceTree = "<group>"; };
+		D5884F7227FFCF49002C8B50 /* TGPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGPerson.h; sourceTree = "<group>"; };
+		D5884F7327FFCF49002C8B50 /* TGPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGPerson.m; sourceTree = "<group>"; };
+		D5884F78280024FF002C8B50 /* UIViewController+Logging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Logging.h"; sourceTree = "<group>"; };
+		D5884F79280024FF002C8B50 /* UIViewController+Logging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Logging.m"; sourceTree = "<group>"; };
 		D58A215B27DC336000BD4CEC /* UIView+TGTopInsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TGTopInsets.h"; sourceTree = "<group>"; };
 		D58A215C27DC336000BD4CEC /* UIView+TGTopInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TGTopInsets.m"; sourceTree = "<group>"; };
 		D58A215E27DC48C600BD4CEC /* TGSlideVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSlideVc.h; sourceTree = "<group>"; };
@@ -437,6 +443,10 @@
 			children = (
 				D57A5CD227FD32C00050482C /* TGRuntimeTestVc.h */,
 				D57A5CD327FD32C00050482C /* TGRuntimeTestVc.m */,
+				D5884F7227FFCF49002C8B50 /* TGPerson.h */,
+				D5884F7327FFCF49002C8B50 /* TGPerson.m */,
+				D5884F78280024FF002C8B50 /* UIViewController+Logging.h */,
+				D5884F79280024FF002C8B50 /* UIViewController+Logging.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -842,6 +852,7 @@
 				D58A216F27DC8B1F00BD4CEC /* TGSlideSegementCell.m in Sources */,
 				D58A216627DC498000BD4CEC /* TGSlideSwitchHeaderView.m in Sources */,
 				D58303D727E4639F00D6B701 /* STMPartView.m in Sources */,
+				D5884F7427FFCF49002C8B50 /* TGPerson.m in Sources */,
 				D57F95B527EABBE50018D228 /* TGDispatchGroupVc.m in Sources */,
 				D5A7AE7227ED950D00341BF8 /* CollectionViewController.m in Sources */,
 				D57FA00127DB26B200B1680F /* YHMallocScrbble.m in Sources */,
@@ -865,6 +876,7 @@
 				D58303D527E4639F00D6B701 /* STMPartMaker.m in Sources */,
 				D527834527D893BB00C7A0F8 /* TGBaseTableView.m in Sources */,
 				D57A681327F84BC400E36D9E /* TGButton.m in Sources */,
+				D5884F7A280024FF002C8B50 /* UIViewController+Logging.m in Sources */,
 				D58303DF27E46DDF00D6B701 /* TGCharSetVc.m in Sources */,
 				D57772F927D9F77D00ADDE85 /* NSObject+YHZombiesNSObject.m in Sources */,
 				D527835D27D8C8E400C7A0F8 /* TGMainTitleCell.m in Sources */,

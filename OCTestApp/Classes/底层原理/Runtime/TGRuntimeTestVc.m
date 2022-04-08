@@ -7,22 +7,138 @@
 
 #import "TGRuntimeTestVc.h"
 #import <objc/message.h>
-@interface TGRuntimeTestVc ()
+#import "TGPerson.h"
+@interface TGSark(){
+NSInteger _instance1;
+NSString * _instance2;
+}
+@property (nonatomic, assign) NSUInteger integer;
+
+- (void)method3WithArg1:(NSInteger)arg1 arg2:(NSString *)arg2;
 
 @end
 
+@implementation TGSark
+
+
+
++ (void)classMethod1 {
+}
+
+- (void)method1 {
+     NSLog(@"call method method1");
+}
+
+- (void)method2 {
+}
+
+- (void)method3WithArg1:(NSInteger)arg1 arg2:(NSString *)arg2 {
+     NSLog(@"arg1 : %ld, arg2 : %@", arg1, arg2);
+}
+
+- (void)speak
+{
+     unsigned int numberOfIvars = 0;
+     Ivar *ivars = class_copyIvarList([self class], &numberOfIvars);
+     for(const Ivar *p = ivars; p < ivars+numberOfIvars; p++) {
+          Ivar const ivar = *p;
+          ptrdiff_t offset = ivar_getOffset(ivar);
+          const char *name = ivar_getName(ivar);
+          NSLog(@"Sark ivar name = %s, offset = %td", name, offset);
+     }
+     NSLog(@"my name is %p", &_name);
+     NSLog(@"my name is %@", *(&_name));
+}
+@end
+
+@interface Test : NSObject
+@end
+@implementation Test
+- (instancetype)init
+{
+     self = [super init];
+     if (self) {
+          NSLog(@"Test instance = %@", self);
+          void *self2 = (__bridge void *)self;
+          NSLog(@"Test instance pointer = %p", &self2);
+          id cls = [TGSark class];
+          NSLog(@"Class instance address = %p", cls);
+          void *obj = &cls;
+          NSLog(@"Void *obj = %@", obj);
+          [(__bridge id)obj speak];
+     }
+     return self;
+}
+@end
+
+@interface TGRuntimeTestVc ()
+@property (nonatomic, strong) TGPerson *person;
+
+@end
+
+
 @implementation TGRuntimeTestVc
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor systemPinkColor];
 
-    object_copy();
+    self.view.layer.anchorPoint = CGPointMake(0.9, 0);
+//    [[Test alloc] init];
+//    int numClass;
+//    Class *classes = NULL;
+//    numClass = objc_getClassList(NULL, 0);
+//
+//    if (numClass > 0) {
+//        classes = malloc(sizeof(Class) * numClass);
+//        numClass = objc_getClassList(classes, numClass);
+//    }
+    
+    self.person = [TGPerson new];
     
     
+}
+
+- (void)printFondationClassesTest {
+    NSLog(@"NSString's framework: %s", class_getImageName(NSString.class));
+    
+    unsigned int outCount;
+    //获取指定库的所有类名
+    const char **list = objc_copyClassNamesForImage(class_getImageName(NSRunLoop.class), &outCount);
+    for (int i = 0; i < outCount; i++) {
+        NSLog(@"class name: %s", list[i]);
+    }
+    
+//    NSTaggedPointerString *str = @"嘻嘻哈哈-";
+}
+
+
+- (void)strcmpTest {
+    const char *name1 = "asdf";
+    const char *name2 = "asdf2";
+
+    if (strcmp(name1, name2)) {
+        printf("奥斯特洛夫斯基");
+    }
+}
+
+
+- (void)addBlockDynamiclly {
+    IMP imp = imp_implementationWithBlock(^(id obj, NSString *str) {
+        NSLog(@"%@ - %@",obj, str);
+    });
+    class_addMethod(self.class, @selector(testBlock:), imp, "v@:@");
+    [self performSelector:@selector(testBlock:) withObject:@"hello ducadi"];
 
 }
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.person performSelector:@selector(method2)];
+}
+
 
 - (void)addClassInstanceDynamic {
     
@@ -91,13 +207,14 @@ static void imp_subMethod1(id self, SEL cmd){
     NSLog(@"call method imp_subMethod1\n");
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (void)kindofClassTest {
     BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
     BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
     BOOL res3 = [(id)[TGSark class] isKindOfClass:[TGSark class]];
     BOOL res4 = [(id)[TGSark class] isMemberOfClass:[TGSark class]];
     NSLog(@"%d %d %d %d", res1, res2, res3, res4);
 }
+
 
 
 
@@ -192,32 +309,5 @@ static void imp_subMethod1(id self, SEL cmd){
 }
 @end
 
-@interface TGSark(){
-NSInteger _instance1;
-NSString * _instance2;
-}
-@property (nonatomic, assign) NSUInteger integer;
-- (void)method3WithArg1:(NSInteger)arg1 arg2:(NSString *)arg2;
-
-@end
-
-@implementation TGSark
 
 
-
-+ (void)classMethod1 {
-}
-
-- (void)method1 {
-     NSLog(@"call method method1");
-}
-
-- (void)method2 {
-}
-
-- (void)method3WithArg1:(NSInteger)arg1 arg2:(NSString *)arg2 {
-     NSLog(@"arg1 : %ld, arg2 : %@", arg1, arg2);
-}
-
-
-@end

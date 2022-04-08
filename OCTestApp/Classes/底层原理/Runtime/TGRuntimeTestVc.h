@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *string;
 
+@property (nonatomic, strong) NSString *name;
+
 - (void)method1;
 - (void)method2;
 + (void)classMethod;
