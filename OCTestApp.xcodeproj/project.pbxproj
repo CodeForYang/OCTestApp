@@ -129,6 +129,7 @@
 		D52782FD27D88FDD00C7A0F8 = {
 			isa = PBXGroup;
 			children = (
+				D5B2616528CCD460008B28D6 /* Jenkinsfile */,
 				D527830827D88FDD00C7A0F8 /* OCTestApp */,
 				D527832427D88FDD00C7A0F8 /* OCTestAppTests */,
 				D527832F27D88FDD00C7A0F8 /* OCTestAppUITests */,
@@ -280,7 +281,6 @@
 		D5B2616428CCD43A008B28D6 /* Jenkins */ = {
 			isa = PBXGroup;
 			children = (
-				D5B2616528CCD460008B28D6 /* Jenkinsfile */,
 			);
 			path = Jenkins;
 			sourceTree = "<group>";
