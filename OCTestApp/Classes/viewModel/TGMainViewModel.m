@@ -12,10 +12,10 @@
 @end
 @implementation TGMainViewModel
 - (void)getData {
-    TGNetworkManager.shared.requestWithSuccessBlock:^(id  _Nonnull obj) {
-        <#code#>
-    } failureBlock:^(id  _Nonnull obj) {
-        <#code#>
-    }
+//    TGNetworkManager.shared.requestWithSuccessBlock:^(id  _Nonnull obj) {
+//        <#code#>
+//    } failureBlock:^(id  _Nonnull obj) {
+//        <#code#>
+//    }
 }
 @end

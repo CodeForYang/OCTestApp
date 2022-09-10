@@ -25,6 +25,7 @@
 		D527834F27D8A56C00C7A0F8 /* TGJsonFileMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = D527834E27D8A56C00C7A0F8 /* TGJsonFileMgr.m */; };
 		D527835427D8AEE700C7A0F8 /* TGMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835327D8AEE700C7A0F8 /* TGMainModel.m */; };
 		D527835927D8B19400C7A0F8 /* TGMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D527835827D8B19400C7A0F8 /* TGMainViewModel.m */; };
+		D5B2616628CCD460008B28D6 /* Jenkinsfile in Resources */ = {isa = PBXBuildFile; fileRef = D5B2616528CCD460008B28D6 /* Jenkinsfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		D527835327D8AEE700C7A0F8 /* TGMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMainModel.m; sourceTree = "<group>"; };
 		D527835727D8B19400C7A0F8 /* TGMainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMainViewModel.h; sourceTree = "<group>"; };
 		D527835827D8B19400C7A0F8 /* TGMainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMainViewModel.m; sourceTree = "<group>"; };
+		D5B2616528CCD460008B28D6 /* Jenkinsfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jenkinsfile; sourceTree = "<group>"; };
 		F8C71D35620A93DEE16355ED /* Pods-OCTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.release.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FCE2A2821832B5659FD4B622 /* Pods-OCTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OCTestApp/Pods-OCTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 		D527830827D88FDD00C7A0F8 /* OCTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				D5B2616428CCD43A008B28D6 /* Jenkins */,
 				D527833F27D8920D00C7A0F8 /* Classes */,
 				D527833E27D891FC00C7A0F8 /* Resources */,
 				D527831B27D88FDD00C7A0F8 /* main.m */,
@@ -274,6 +277,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D5B2616428CCD43A008B28D6 /* Jenkins */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2616528CCD460008B28D6 /* Jenkinsfile */,
+			);
+			path = Jenkins;
+			sourceTree = "<group>";
+		};
 		FA203BC936F7E790CE9ADADC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +407,7 @@
 			files = (
 				D527831927D88FDD00C7A0F8 /* LaunchScreen.storyboard in Resources */,
 				D527831627D88FDD00C7A0F8 /* Assets.xcassets in Resources */,
+				D5B2616628CCD460008B28D6 /* Jenkinsfile in Resources */,
 				D527831427D88FDD00C7A0F8 /* Main.storyboard in Resources */,
 				D527834827D89A7700C7A0F8 /* contents.json in Resources */,
 			);
