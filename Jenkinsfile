@@ -1,1 +1,2 @@
+sh 'printenv'
 echo 'preparing...'
